@@ -6,7 +6,7 @@ This project is a Django-based portfolio website that showcases internship exper
 ## Live Website
 
 The portfolio website is now accessible online at:
-**[GamingWithToimen.pythonanywhere.com](https://GamingWithToimen.pythonanywhere.com)**
+**[tijmevervoort.pythonanywhere.com](https://tijmevervoort.pythonanywhere.com)**
 
 Feel free to visit the live site to see the project in action!
 
