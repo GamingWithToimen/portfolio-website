@@ -3,7 +3,14 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import ProjectCard from "@/components/ProjectCard";
 import SectionHeading from "@/components/SectionHeading";
-import { photo, portfolioImages, statValues, withImages } from "@/data/media";
+import {
+  employer,
+  photo,
+  portfolioImages,
+  statValues,
+  withImages,
+  workSkills,
+} from "@/data/media";
 import { hasLocale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/get-dictionary";
 
@@ -76,6 +83,41 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
           <p className="leading-relaxed text-muted">{dict.profile.bio1}</p>
           <p className="leading-relaxed text-muted">{dict.profile.bio2}</p>
         </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-6 pb-24">
+        <SectionHeading label={dict.work.label} title={dict.work.title} />
+        <article className="rounded-xl border border-line bg-surface p-8 transition-colors hover:border-accent">
+          <div className="flex flex-wrap items-start justify-between gap-4">
+            <div>
+              <h3 className="font-display text-4xl uppercase tracking-wide">
+                {employer}
+              </h3>
+              <p className="mt-1 text-lg text-accent">{dict.work.role}</p>
+            </div>
+            <span className="rounded-full border border-accent px-4 py-1 text-xs uppercase tracking-widest text-accent">
+              {dict.work.period}
+            </span>
+          </div>
+          <p className="mt-6 max-w-3xl leading-relaxed text-muted">
+            {dict.work.description}
+          </p>
+          <div className="mt-6">
+            <p className="text-xs uppercase tracking-[0.3em] text-muted">
+              {dict.work.skillsLabel}
+            </p>
+            <ul className="mt-3 flex flex-wrap gap-2">
+              {workSkills.map((skill) => (
+                <li
+                  key={skill}
+                  className="rounded-full border border-line px-4 py-1.5 text-sm"
+                >
+                  {skill}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </article>
       </section>
 
       <section className="mx-auto max-w-6xl px-6 pb-24">

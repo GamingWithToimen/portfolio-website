@@ -31,6 +31,15 @@ const en: Dictionary = {
     bio1: "I am 22 years old and work full-time as a full stack developer at Innovaware. I graduated from the Software Developer program (MBO level 4) at KW1C in 's-Hertogenbosch, after switching from Architecture Construction, and I now build ERP systems in C# with TypeScript, plus a mobile app in React Native.",
     bio2: "During my studies I completed two internships, at Omnilan and at AB Transport, where I worked with Python and Django. I also built a complete website for a sports club and several web projects. My earlier studies in construction gave me hands-on project experience too: a steel-framed restaurant, a 1930s residential building and a recreational facility for young people.",
   },
+  work: {
+    label: "Innovaware",
+    title: "Work",
+    role: "Full Stack Developer",
+    period: "Current position",
+    description:
+      "I build ERP systems in C# and TypeScript and develop the accompanying mobile app in React Native.",
+    skillsLabel: "Technologies",
+  },
   stats: ["Years old", "Internships completed", "Current focus", "Languages used"],
   portfolio: {
     label: "Tijme",

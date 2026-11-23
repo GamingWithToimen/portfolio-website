@@ -31,6 +31,15 @@ const sv: Dictionary = {
     bio1: "Jag är 22 år och arbetar heltid som fullstackutvecklare på Innovaware. Jag har tagit examen som mjukvaruutvecklare (MBO nivå 4) på KW1C i 's-Hertogenbosch, efter att ha bytt från byggutbildningen. Nu bygger jag ERP-system i C# med TypeScript, plus en mobilapp i React Native.",
     bio2: "Under studierna gjorde jag två praktikperioder, hos Omnilan och hos AB Transport, där jag arbetade med Python och Django. Jag byggde också en komplett webbplats för en idrottsklubb och flera webbprojekt. Min tidigare byggutbildning gav mig också praktisk projekterfarenhet: en restaurang med stålstomme, ett bostadshus från 1930-talet och en fritidsanläggning för ungdomar.",
   },
+  work: {
+    label: "Innovaware",
+    title: "Arbete",
+    role: "Full Stack Developer",
+    period: "Nuvarande tjänst",
+    description:
+      "Jag bygger ERP-system i C# och TypeScript och utvecklar den tillhörande mobilappen i React Native.",
+    skillsLabel: "Teknologier",
+  },
   stats: ["År gammal", "Praktikperioder klara", "Nuvarande fokus", "Språk i bruk"],
   portfolio: {
     label: "Tijme",

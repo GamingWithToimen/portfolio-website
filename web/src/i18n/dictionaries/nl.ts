@@ -31,6 +31,15 @@ const nl: Dictionary = {
     bio1: "Ik ben 22 jaar oud en werk fulltime als full stack developer bij Innovaware. Ik ben afgestudeerd aan de opleiding Software Developer (MBO niveau 4) bij KW1C in 's-Hertogenbosch, nadat ik was overgestapt van de bouwopleiding. Nu bouw ik ERP-systemen in C# met TypeScript, plus een mobiele app in React Native.",
     bio2: "Tijdens mijn studie liep ik twee stages, bij Omnilan en bij AB Transport, waar ik met Python en Django werkte. Ook bouwde ik een complete website voor een sportclub en diverse webprojecten. Mijn eerdere bouwopleiding gaf me ook praktijkervaring met projecten: een restaurant met stalen frame, een woning uit de jaren dertig en een recreatievoorziening voor jongeren.",
   },
+  work: {
+    label: "Innovaware",
+    title: "Werk",
+    role: "Full Stack Developer",
+    period: "Huidige functie",
+    description:
+      "Ik bouw ERP-systemen in C# en TypeScript en ontwikkel de bijbehorende mobiele app in React Native.",
+    skillsLabel: "Technologieën",
+  },
   stats: ["Jaar oud", "Stages afgerond", "Huidige focus", "Talen gebruikt"],
   portfolio: {
     label: "Tijme",

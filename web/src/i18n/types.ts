@@ -23,6 +23,14 @@ export type Dictionary = {
     photoAlt: string;
   };
   profile: { tagline: string; bio1: string; bio2: string };
+  work: {
+    label: string;
+    title: string;
+    role: string;
+    period: string;
+    description: string;
+    skillsLabel: string;
+  };
   /** Labels for the four stats; the values live in data/media.ts. */
   stats: [string, string, string, string];
   portfolio: { label: string; title: string; projects: ProjectText[] };

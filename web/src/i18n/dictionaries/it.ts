@@ -31,6 +31,15 @@ const it: Dictionary = {
     bio1: "Ho 22 anni e lavoro a tempo pieno come sviluppatore full stack presso Innovaware. Mi sono diplomato in Sviluppo Software (MBO livello 4) al KW1C di 's-Hertogenbosch, dopo aver cambiato indirizzo rispetto all'edilizia. Oggi realizzo sistemi ERP in C# con TypeScript, oltre a un'app mobile in React Native.",
     bio2: "Durante gli studi ho svolto due tirocini, presso Omnilan e presso AB Transport, dove ho lavorato con Python e Django. Ho inoltre realizzato un sito web completo per una società sportiva e diversi progetti web. Anche i miei studi precedenti nell'edilizia mi hanno dato esperienza pratica: un ristorante con struttura in acciaio, un edificio residenziale degli anni Trenta e una struttura ricreativa per i giovani.",
   },
+  work: {
+    label: "Innovaware",
+    title: "Lavoro",
+    role: "Full Stack Developer",
+    period: "Posizione attuale",
+    description:
+      "Realizzo sistemi ERP in C# e TypeScript e sviluppo la relativa app mobile in React Native.",
+    skillsLabel: "Tecnologie",
+  },
   stats: ["Anni", "Tirocini completati", "Focus attuale", "Linguaggi usati"],
   portfolio: {
     label: "Tijme",

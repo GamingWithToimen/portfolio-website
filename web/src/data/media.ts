@@ -16,6 +16,10 @@ export const photo = "/images/profile.jpg";
 
 export const statValues = ["22", "2", "ERP", "4+"] as const;
 
+export const employer = "Innovaware";
+
+export const workSkills = ["C#", "TypeScript", "React Native", "ERP"] as const;
+
 export const companies = {
   internship1: "Omnilan",
   internship2: "AB Transport",

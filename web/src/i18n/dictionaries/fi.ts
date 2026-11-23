@@ -31,6 +31,15 @@ const fi: Dictionary = {
     bio1: "Olen 22-vuotias ja työskentelen kokoaikaisena full stack -kehittäjänä Innovawaressa. Valmistuin ohjelmistokehittäjäksi (MBO-taso 4) KW1C:stä 's-Hertogenboschissa, kun olin vaihtanut rakennusalalta. Nyt rakennan ERP-järjestelmiä C#:lla ja TypeScriptillä sekä mobiilisovellusta React Nativella.",
     bio2: "Opintojeni aikana suoritin kaksi harjoittelua, Omnilanilla ja AB Transportilla, joissa työskentelin Pythonilla ja Djangolla. Rakensin myös kokonaisen verkkosivuston urheiluseuralle sekä useita verkkoprojekteja. Aiemmat rakennusalan opintoni antoivat myös käytännön projektikokemusta: teräsrunkoinen ravintola, 1930-luvun asuinrakennus ja nuorten vapaa-ajan tila.",
   },
+  work: {
+    label: "Innovaware",
+    title: "Työ",
+    role: "Full Stack Developer",
+    period: "Nykyinen tehtävä",
+    description:
+      "Rakennan ERP-järjestelmiä C#:lla ja TypeScriptillä ja kehitän siihen liittyvän mobiilisovelluksen React Nativella.",
+    skillsLabel: "Teknologiat",
+  },
   stats: ["Vuotta", "Harjoittelua suoritettu", "Nykyinen painopiste", "Käytettyjä kieliä"],
   portfolio: {
     label: "Tijme",
