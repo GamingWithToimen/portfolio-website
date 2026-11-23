@@ -1,149 +1,46 @@
-# Portfolio Website - Django Project
+# Portfolio Website
 
-## Overview
-This project is a Django-based portfolio website that showcases internship experiences and portfolio items. It features a preview mode for internship content, with detailed information available to authenticated users. The site is designed to be visually appealing, accessible, and available in multiple languages.
+Portfolio of Tijme Vervoort.
 
-## Live Website
-
-The portfolio website is now accessible online at:
-**[tijmevervoort.pythonanywhere.com](https://tijmevervoort.pythonanywhere.com)**
-
-Feel free to visit the live site to see the project in action!
-
-## Features
-
-- **Responsive Design**: Works on mobile, tablet, and desktop devices
-- **Content Preview System**: 
-  - All pages are accessible to visitors
-  - Preview mode for internship content
-  - Full details available after authentication
-- **Multi-language Support**: 
-  - Available in English, Dutch, French, German, Spanish, Italian
-  - Nordic language support (Norwegian, Swedish, Danish, Finnish)
-  - Language detection based on browser settings
-- **User Authentication**: 
-  - Login/Registration system
-  - Enhanced content for authenticated users
-- **Portfolio Showcase**: Grid-based display of portfolio projects
-- **Internship Documentation**: Organized documentation of internship experiences
-
-## Technical Implementation
-
-This project has been converted from a static HTML5 site to a dynamic Django web application. Key elements include:
-
-- **Django Architecture**: Implemented proper Django project structure with apps
-- **Template System**: Django templates with inheritance for consistent layout
-- **Authentication**: User registration and login functionality with content privileges
-- **Internationalization**: Custom translation system for multi-language support
-- **Static Files**: Organized CSS, JS, and images following Django conventions
-- **URL Routing**: Implemented Django URL patterns for better navigation
-- **Deployment**: Successfully deployed to PythonAnywhere hosting platform
-
-## Setup Instructions
-
-### Prerequisites
-- Python 3.8+
-- pip (Python package manager)
-
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/kw1c-VervoortTijme/portfolio-website.git
-   cd portfolio-website
-   ```
-
-2. **Create a virtual environment**
-   ```bash
-   python -m venv venv
-   
-   # Activate the virtual environment
-   # On Windows:
-   venv\Scripts\activate
-   # On macOS/Linux:
-   source venv/bin/activate
-   ```
-
-3. **Install dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. **Run migrations**
-   ```bash
-   python manage.py migrate
-   ```
-
-5. **Create a superuser (admin)**
-   ```bash
-   python manage.py createsuperuser
-   ```
-
-6. **Start the development server**
-   ```bash
-   python manage.py runserver
-   ```
-
-7. **Access the website**
-   - Visit the live site at [GamingWithToimen.pythonanywhere.com](https://GamingWithToimen.pythonanywhere.com)
-   - Or access your local development server at http://127.0.0.1:8000/
-   - Login for enhanced content access
-
-## Project Structure
+## Structure
 
 ```
-portfolio_project/
-├── portfolio/                 # Main Django app
-│   ├── static/
-│   │   └── portfolio/         # Static files (CSS, images)
-│   │       ├── css/
-│   │       ├── images/
-│   │       └── bootstrap-icons/
-│   ├── templates/
-│   │   └── portfolio/         # HTML templates
-│   │       ├── base.html      # Base template with header/footer
-│   │       ├── index.html     # Home page
-│   │       ├── login.html     # Login page
-│   │       ├── register.html  # Registration page
-│   │       ├── portfolio_page.html
-│   │       ├── stage_1.html   # Internship pages with preview
-│   │       ├── stage_2.html
-│   ├── translations.py        # Multi-language support
-│   ├── forms.py               # User registration form
-│   ├── views.py               # View functions
-│   └── urls.py                # App URL patterns
-├── portfolio_project/         # Project configuration
-│   ├── settings.py
-│   └── urls.py                # Project URL patterns
-├── manage.py                  # Django management script
-├── requirements.txt           # Project dependencies
-└── README.md                  # Project documentation
+portfolio-website/
+├── web/             Current site: Next.js + TypeScript + Tailwind
+│   ├── public/images/   Project screenshots and profile photo
+│   └── src/
+│       ├── app/[lang]/  Pages (home, portfolio, internship-1, internship-2)
+│       ├── components/  Header, Footer, LanguageSwitcher, ProjectCard, ...
+│       ├── data/        Images and numbers (language-independent)
+│       ├── i18n/        Languages: config, types and one dictionary per language
+│       └── proxy.ts     Redirects / to the visitor's browser language
+└── legacy-django/   Previous site: Python + Django (kept for reference)
 ```
 
-## Technologies Used
+## Run the current site
 
-- **Django**: Web framework for Python
-- **Bootstrap**: Frontend framework for responsive design
-- **JavaScript**: For interactive elements
-- **HTML5/CSS3**: Standard web technologies
-- **SQLite**: Database (default for development)
-- **PythonAnywhere**: Hosting platform for the live site
+Requires Node.js 20 or newer.
 
-## Browser Support
+```bash
+cd web
+npm install
+npm run dev      # http://localhost:3000
+npm run build    # production build
+```
 
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
+## Editing the content
 
-## User Guide
+The site is available in 10 languages: English, Dutch, French, German, Spanish,
+Italian, Norwegian, Swedish, Danish and Finnish.
 
-- **Home Page**: Introduction with professional profile photo
-- **Portfolio**: View portfolio projects and descriptions
-- **Internship Pages**: Preview internship information, with detailed content available after login
-- **Login/Register**: Create an account or sign in for enhanced content access
-- **Language Selection**: Choose your preferred language from the navbar dropdown
+- Text: one file per language in `web/src/i18n/dictionaries/`. The structure is
+  defined in `web/src/i18n/types.ts`, so TypeScript flags any language that is
+  missing a line.
+- Images and numbers: `web/src/data/media.ts`.
+- Add a language: add it to `web/src/i18n/config.ts` and
+  `get-dictionary.ts`, then create its dictionary file.
 
-## License
+## Legacy Django site
 
-This project is for educational purposes. All rights reserved.
+The old Django version lives in `legacy-django/`. See that folder's
+`requirements.txt` to run it. It is no longer maintained.
