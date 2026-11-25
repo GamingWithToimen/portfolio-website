@@ -1,49 +1,68 @@
+import Marquee from "@/components/Marquee";
+import PageHero, { type HeroAction } from "@/components/PageHero";
 import ProjectCard from "@/components/ProjectCard";
+import Reveal from "@/components/Reveal";
 import SectionHeading from "@/components/SectionHeading";
 import type { Section } from "@/data/media";
 
 type Props = {
   label: string;
-  title: string;
-  subtitle?: string;
-  roleTitle: string;
+  company: string;
+  eyebrow: string;
   role: string;
+  actions: HeroAction[];
+  band: readonly string[];
   sections: Section[];
 };
 
+// Same layout as the home page: hero, orange band, then centred sections.
 export default function InternshipPage({
   label,
-  title,
-  subtitle,
-  roleTitle,
+  company,
+  eyebrow,
   role,
+  actions,
+  band,
   sections,
 }: Props) {
+  const cover = sections[0]?.projects[0];
+
   return (
-    <div className="mx-auto max-w-6xl px-6 py-16">
-      <div className="rise mb-16">
-        <p className="text-xs uppercase tracking-[0.3em] text-accent">{label}</p>
-        <h1 className="font-display mt-2 text-6xl uppercase leading-none sm:text-8xl">
-          {title}
-        </h1>
-        {subtitle && <p className="mt-3 text-lg text-muted">{subtitle}</p>}
-      </div>
+    <>
+      <PageHero
+        eyebrow={eyebrow}
+        line1={label}
+        accent={company}
+        text={role}
+        actions={actions}
+        image={{
+          src: cover?.image ?? "",
+          alt: cover?.title ?? company,
+          kind: "screenshot",
+        }}
+      />
 
-      <div className="mb-20 max-w-3xl rounded-xl border border-line bg-surface p-8">
-        <h2 className="font-display text-2xl uppercase">{roleTitle}</h2>
-        <p className="mt-3 leading-relaxed text-muted">{role}</p>
-      </div>
+      <Marquee items={band} />
 
-      {sections.map((s) => (
-        <section key={s.heading} className="mb-20">
-          <SectionHeading label={title} title={s.heading} />
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {s.projects.map((p) => (
-              <ProjectCard key={p.title} project={p} />
-            ))}
-          </div>
-        </section>
-      ))}
-    </div>
+      <div className="mx-auto max-w-[110rem] px-6 pt-28 md:px-10 xl:px-16 2xl:px-20">
+        {sections.map((s, n) => (
+          <section key={s.heading} className="pb-28">
+            <Reveal>
+              <SectionHeading
+                label={`${String(n + 1).padStart(2, "0")} · ${company}`}
+                title={s.heading}
+              />
+            </Reveal>
+            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {s.projects.map((p, i) => (
+                <Reveal key={p.title} delay={(i % 3) * 120} className="h-full">
+                  <ProjectCard project={p} />
+                </Reveal>
+              ))}
+            </div>
+          </section>
+        ))}
+      </div>
+    </>
   );
 }

@@ -1,21 +1,16 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { Anton, Inter } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "../globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { hasLocale, locales } from "@/i18n/config";
 import { getDictionary } from "@/i18n/get-dictionary";
 
-const anton = Anton({
-  variable: "--font-anton",
-  weight: "400",
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
   subsets: ["latin"],
-});
-
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
+  weight: ["400", "500", "600", "800", "900"],
 });
 
 export function generateStaticParams() {
@@ -45,12 +40,12 @@ export default async function RootLayout({
   return (
     <html
       lang={lang === "no" ? "nb" : lang}
-      className={`${anton.variable} ${inter.variable} antialiased`}
-    >
-      <body className="min-h-screen flex flex-col">
-        <Header lang={lang} nav={dict.nav} />
-        <main className="flex-1">{children}</main>
-        <Footer rights={dict.footer.rights} />
+      // Scale the whole site up on large screens (everything is in rem)
+      className={`${montserrat.variable} antialiased min-[1800px]:text-[18px] min-[2200px]:text-[21px] min-[3000px]:text-[26px]`}    >
+      <body className="flex min-h-screen flex-col">
+        <Header lang={lang} nav={dict.nav} contactLabel={dict.contact.label} />
+        <main className="relative z-[1] flex-1 overflow-x-clip">{children}</main>
+        <Footer contact={dict.contact} rights={dict.footer.rights} />
       </body>
     </html>
   );

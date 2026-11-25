@@ -1,12 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #08080a;
-  --surface: #121216;
-  --line: #24242c;
-  --text: #f2f2f4;
-  --muted: #9a9aa6;
-  --accent: #c6ff3d;
+  --bg: #000000;
+  --surface: #0e0e0e;
+  --line: #2a2a2a;
+  --text: #ffffff;
+  --muted: #8c8c8c;
+  --accent: #ff6a2b;
+  --block: #ff6a2b;
 }
 
 @theme inline {
@@ -15,14 +16,24 @@
   --color-line: var(--line);
   --color-muted: var(--muted);
   --color-accent: var(--accent);
-  --font-display: var(--font-anton), Impact, sans-serif;
-  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --color-block: var(--block);
+  --font-display: var(--font-montserrat), system-ui, sans-serif;
+  --font-sans: var(--font-montserrat), system-ui, sans-serif;
+
+  --animate-marquee: marquee 35s linear infinite;
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
 }
 
 html {
   scroll-behavior: smooth;
 }
-
 body {
   background: var(--bg);
   color: var(--text);

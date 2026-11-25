@@ -3,67 +3,123 @@ import type { Dictionary } from "../types";
 const en: Dictionary = {
   meta: {
     title: "Tijme Vervoort — Portfolio",
-    description:
-      "Portfolio of Tijme Vervoort, full stack developer at Innovaware building ERP systems in C#, TypeScript and React Native.",
+    description: "Portfolio of Tijme Vervoort, junior full-stack developer at Innovaware building CRM systems in C# (.NET 10) and Laravel with a React / Next.js front-end.",
   },
   nav: {
     home: "Home",
     portfolio: "Portfolio",
-    internship1: "Internship 1",
-    internship2: "Internship 2",
+    internship1: "Omnilan",
+    internship2: "AB Transport",
     language: "Language",
   },
-  footer: { rights: "All rights reserved." },
+  footer: {
+    rights: "All rights reserved.",
+  },
   home: {
-    eyebrow: "Portfolio",
+    eyebrow: "Junior Full-Stack Developer · C# / .NET",
     iAm: "I am",
     explore: "Explore now",
     internships: "Internships",
-    aboutLabel: "Tijme",
+    aboutLabel: "Profile",
     aboutTitle: "About me",
-    selectedLabel: "Selected",
+    selectedLabel: "Featured",
     projectsTitle: "Projects",
     photoAlt: "Portrait of Tijme Vervoort",
   },
   profile: {
-    tagline:
-      "Full Stack Developer at Innovaware, building ERP systems in C# and TypeScript, with React Native for mobile.",
-    bio1: "I am 22 years old and work full-time as a full stack developer at Innovaware. I graduated from the Software Developer program (MBO level 4) at KW1C in 's-Hertogenbosch, after switching from Architecture Construction, and I now build ERP systems in C# with TypeScript, plus a mobile app in React Native.",
-    bio2: "During my studies I completed two internships, at Omnilan and at AB Transport, where I worked with Python and Django. I also built a complete website for a sports club and several web projects. My earlier studies in construction gave me hands-on project experience too: a steel-framed restaurant, a 1930s residential building and a recreational facility for young people.",
+    tagline: "Junior Full-Stack Developer at Innovaware, building CRM systems in C# (.NET 10) and Laravel, with React / Next.js on the front-end.",
+    bio1: "I am 22 years old and work full-time as a junior full-stack developer at Innovaware. I graduated from the Software Developer programme (MBO level 4) at KW1C in 's-Hertogenbosch, after switching from construction and architecture, and I now build CRM systems in C# (.NET 10) and Laravel, with REST APIs to a React / Next.js front-end.",
+    bio2: "During my studies I completed two C# internships. At Omnilan I wrote software for ESP32 devices that controls lighting from a dashboard; at AB Transport I sped up database queries and built a staff overview in C#, Python and Django. I also built Data-Defence (a game in C# and Unity), a website for a sports club and this portfolio.",
   },
   work: {
     label: "Innovaware",
     title: "Work",
-    role: "Full Stack Developer",
+    role: "Junior Full-Stack Developer",
     period: "Current position",
-    description:
-      "I build ERP systems in C# and TypeScript and develop the accompanying mobile app in React Native.",
+    description: "I build CRM systems for small and medium-sized businesses in C# (.NET 10) and Laravel, with REST APIs connecting the back-end to a React / Next.js front-end.",
     skillsLabel: "Technologies",
   },
-  stats: ["Years old", "Internships completed", "Current focus", "Languages used"],
+  stats: [
+    "features delivered at Innovaware",
+    "issues fixed at Omnilan",
+    "faster database queries at AB Transport",
+    "C# internships completed",
+  ],
+  timeline: {
+    label: "Career",
+    title: "Timeline",
+    present: "Present",
+    more: "View internship at {org}",
+    kinds: {
+      work: "Work",
+      internship: "Internship",
+      education: "Education",
+    },
+    items: {
+      innovaware: {
+        role: "Junior Full-Stack Developer",
+        description: "Building CRM systems for small and medium-sized businesses in C# (.NET 10) and Laravel, with REST APIs to a React / Next.js front-end, GitLab CI/CD pipelines and an AI helpdesk integration.",
+      },
+      abTransport: {
+        role: "Software Development Intern",
+        description: "Optimised the database queries behind a report page, making them about 2–5x faster, and built a new staff overview in C#, Python and Django.",
+      },
+      omnilan: {
+        role: "Software Development Intern",
+        description: "Wrote C# software for ESP32 devices so users can switch a room's lighting from a dashboard button, and fixed 30 issues in existing code.",
+      },
+      kw1c: {
+        role: "Software Developer (MBO level 4)",
+        description: "Completed the Software Developer programme in 's-Hertogenbosch and obtained my diploma, using Azure DevOps and Azure SQL in school projects.",
+      },
+    },
+  },
+  contact: {
+    label: "Contact",
+    title: "Let's talk",
+    text: "Looking for a junior .NET or full-stack developer? Send me an email or connect on LinkedIn.",
+    email: "Email me",
+    cv: "Download CV",
+    cta: "Get in touch",
+  },
+  featured: {
+    github: "View on GitHub",
+    private: "Client work · code not public",
+    items: {
+      dataDefence: {
+        title: "Data-Defence",
+        description: "A game in C# and Unity: find the infiltrator at a paper company, handle incidents such as fires and dismiss employees who cause trouble.",
+      },
+      crm: {
+        title: "CRM systems at Innovaware",
+        description: "Back-end features for CRM systems used by small and medium-sized businesses: C# (.NET 10), Laravel, REST APIs, MySQL, GitLab CI/CD and an AI helpdesk integration.",
+      },
+      portfolioSite: {
+        title: "This portfolio",
+        description: "Built with Next.js, React, TypeScript and Tailwind CSS, in ten languages. The first version was made in Python and Django.",
+      },
+    },
+  },
   portfolio: {
-    label: "Tijme",
+    label: "Education",
     title: "Portfolio projects",
+    exercisesTitle: "School exercises",
     projects: [
       {
         title: "Rainbow Project",
-        description:
-          "Span classes and visually appealing layouts, using CSS positioning and colour schemes to create a rainbow effect.",
+        description: "Span classes and visually appealing layouts, using CSS positioning and colour schemes to create a rainbow effect.",
       },
       {
         title: "Match Table Project",
-        description:
-          "Football match information displayed in a clear, organised format using HTML tables and CSS styling.",
+        description: "Football match information displayed in a clear, organised format using HTML tables and CSS styling.",
       },
       {
         title: "CSS Table Alignment Exercise",
-        description:
-          "Took a disorganised HTML file and turned it into an appealing presentation through strategic CSS.",
+        description: "Took a disorganised HTML file and turned it into an appealing presentation through strategic CSS.",
       },
       {
         title: "Row and Column Span Project",
-        description:
-          "Experimented with row-span and column-span to build complex table layouts styled with CSS classes and IDs.",
+        description: "Experimented with row-span and column-span to build complex table layouts styled with CSS classes and IDs.",
       },
     ],
   },
@@ -73,7 +129,7 @@ const en: Dictionary = {
     role: "At Omnilan, I worked as a software developer focused on improving internal systems and communication tools. My main responsibilities were developing and enhancing the lighting control system and streamlining the email communication system between workers.",
     sections: [
       {
-        heading: "Lighting System Development",
+        heading: "Email System Enhancement",
         projects: [
           {
             title: "ISPConfig",
@@ -81,8 +137,7 @@ const en: Dictionary = {
           },
           {
             title: "Email Domain Management",
-            description:
-              "Creating email domains for addresses associated with the website.",
+            description: "Creating email domains for addresses associated with the website.",
           },
           {
             title: "Email Address Configuration",
@@ -91,7 +146,7 @@ const en: Dictionary = {
         ],
       },
       {
-        heading: "Email System Enhancement",
+        heading: "Lighting System Development",
         projects: [
           {
             title: "Rememberz",
@@ -99,8 +154,7 @@ const en: Dictionary = {
           },
           {
             title: "Milight Control System",
-            description:
-              "User configuration settings for lighting control, including colour adjustment.",
+            description: "User configuration settings for lighting control, including colour adjustment.",
           },
           {
             title: "Rememberz Main Interface",
@@ -114,20 +168,18 @@ const en: Dictionary = {
     label: "Internship 2",
     subtitle: "Web Development & Online Learning",
     roleTitle: "My role at AB Transport",
-    role: "At AB Transport, I worked as a software developer in the IT department, improving the company's email systems and their visual presentation. I built better-looking email templates and interfaces and spent time on structured online courses, advancing my Python, web frameworks and email design skills.",
+    role: "At AB Transport I was a software development intern in the IT department. I optimised the database queries behind a report page, making them about 2–5x faster, built a new staff overview in C#, Python and Django and improved the company's email templates. Tasks and code were managed in Azure DevOps.",
     sections: [
       {
         heading: "Web Development & CMS Projects",
         projects: [
           {
             title: "Wagtail CMS Development",
-            description:
-              "Explored the Wagtail CMS through structured online coursework, building dynamic content management systems.",
+            description: "Explored the Wagtail CMS through structured online coursework, building dynamic content management systems.",
           },
           {
             title: "Content Management Systems",
-            description:
-              "Built interactive blog publications with FAQ sections and dynamic carousel components.",
+            description: "Built interactive blog publications with FAQ sections and dynamic carousel components.",
           },
         ],
       },
@@ -136,8 +188,7 @@ const en: Dictionary = {
         projects: [
           {
             title: "Bootstrap Email Templates",
-            description:
-              "Designed responsive email signatures and layouts with Bootstrap Email for AB Transport.",
+            description: "Designed responsive email signatures and layouts with Bootstrap Email for AB Transport.",
           },
         ],
       },
@@ -146,13 +197,11 @@ const en: Dictionary = {
         projects: [
           {
             title: "Programming Disciplines",
-            description:
-              "Explored Python, JavaScript, HTML & CSS, SQL and more through structured online programs.",
+            description: "Explored Python, JavaScript, HTML & CSS, SQL and more through structured online programs.",
           },
           {
             title: "Codecademy Python Courses",
-            description:
-              "Completed intermediate and advanced Python courses plus Django web development.",
+            description: "Completed intermediate and advanced Python courses plus Django web development.",
           },
         ],
       },

@@ -3,67 +3,123 @@ import type { Dictionary } from "../types";
 const de: Dictionary = {
   meta: {
     title: "Tijme Vervoort — Portfolio",
-    description:
-      "Portfolio von Tijme Vervoort, Full-Stack-Entwickler bei Innovaware, der ERP-Systeme in C#, TypeScript und React Native entwickelt.",
+    description: "Portfolio von Tijme Vervoort, Junior Full-Stack-Entwickler bei Innovaware, der CRM-Systeme in C# (.NET 10) und Laravel mit einem React-/Next.js-Frontend entwickelt.",
   },
   nav: {
     home: "Startseite",
     portfolio: "Portfolio",
-    internship1: "Praktikum 1",
-    internship2: "Praktikum 2",
+    internship1: "Omnilan",
+    internship2: "AB Transport",
     language: "Sprache",
   },
-  footer: { rights: "Alle Rechte vorbehalten." },
+  footer: {
+    rights: "Alle Rechte vorbehalten.",
+  },
   home: {
-    eyebrow: "Portfolio",
+    eyebrow: "Junior Full-Stack Developer · C# / .NET",
     iAm: "Ich bin",
     explore: "Jetzt entdecken",
     internships: "Praktika",
-    aboutLabel: "Tijme",
+    aboutLabel: "Profil",
     aboutTitle: "Über mich",
-    selectedLabel: "Auswahl",
+    selectedLabel: "Ausgewählt",
     projectsTitle: "Projekte",
     photoAlt: "Porträt von Tijme Vervoort",
   },
   profile: {
-    tagline:
-      "Full-Stack-Entwickler bei Innovaware, entwickelt ERP-Systeme in C# und TypeScript, mit React Native für mobile Apps.",
-    bio1: "Ich bin 22 Jahre alt und arbeite in Vollzeit als Full-Stack-Entwickler bei Innovaware. Ich habe die Ausbildung zum Softwareentwickler (MBO Niveau 4) am KW1C in 's-Hertogenbosch abgeschlossen, nachdem ich aus dem Bereich Bau gewechselt war. Heute entwickle ich ERP-Systeme in C# mit TypeScript sowie eine mobile App in React Native.",
-    bio2: "Während meines Studiums habe ich zwei Praktika absolviert, bei Omnilan und bei AB Transport, wo ich mit Python und Django gearbeitet habe. Außerdem habe ich eine komplette Website für einen Sportverein und mehrere Webprojekte entwickelt. Auch mein früheres Bau-Studium brachte praktische Projekterfahrung: ein Restaurant mit Stahlskelett, ein Wohnhaus aus den 1930er-Jahren und eine Freizeiteinrichtung für Jugendliche.",
+    tagline: "Junior Full-Stack-Entwickler bei Innovaware, entwickelt CRM-Systeme in C# (.NET 10) und Laravel, mit React / Next.js im Frontend.",
+    bio1: "Ich bin 22 Jahre alt und arbeite in Vollzeit als Junior Full-Stack-Entwickler bei Innovaware. Ich habe die Ausbildung zum Softwareentwickler (MBO Niveau 4) am KW1C in 's-Hertogenbosch abgeschlossen, nachdem ich aus dem Bereich Bau gewechselt war. Heute entwickle ich CRM-Systeme in C# (.NET 10) und Laravel, mit REST-APIs zu einem React-/Next.js-Frontend.",
+    bio2: "Während meiner Ausbildung habe ich zwei C#-Praktika absolviert. Bei Omnilan habe ich Software für ESP32-Geräte geschrieben, die Licht über ein Dashboard steuert; bei AB Transport habe ich Datenbankabfragen beschleunigt und eine Mitarbeiterübersicht in C#, Python und Django entwickelt. Außerdem habe ich Data-Defence (ein Spiel in C# und Unity), eine Website für einen Sportverein und dieses Portfolio gebaut.",
   },
   work: {
     label: "Innovaware",
     title: "Beruf",
-    role: "Full Stack Developer",
+    role: "Junior Full-Stack Developer",
     period: "Aktuelle Position",
-    description:
-      "Ich entwickle ERP-Systeme in C# und TypeScript sowie die zugehörige mobile App in React Native.",
+    description: "Ich entwickle CRM-Systeme für kleine und mittlere Unternehmen in C# (.NET 10) und Laravel, mit REST-APIs, die das Backend mit einem React-/Next.js-Frontend verbinden.",
     skillsLabel: "Technologien",
   },
-  stats: ["Jahre alt", "Praktika abgeschlossen", "Aktueller Fokus", "Verwendete Sprachen"],
+  stats: [
+    "Features bei Innovaware geliefert",
+    "Fehler bei Omnilan behoben",
+    "schnellere Abfragen bei AB Transport",
+    "C#-Praktika abgeschlossen",
+  ],
+  timeline: {
+    label: "Werdegang",
+    title: "Zeitleiste",
+    present: "Heute",
+    more: "Praktikum bei {org} ansehen",
+    kinds: {
+      work: "Beruf",
+      internship: "Praktikum",
+      education: "Ausbildung",
+    },
+    items: {
+      innovaware: {
+        role: "Junior Full-Stack-Entwickler",
+        description: "Ich entwickle CRM-Systeme für kleine und mittlere Unternehmen in C# (.NET 10) und Laravel, mit REST-APIs zu einem React-/Next.js-Frontend, GitLab-CI/CD-Pipelines und einer KI-Helpdesk-Integration.",
+      },
+      abTransport: {
+        role: "Praktikant Softwareentwicklung",
+        description: "Datenbankabfragen hinter einer Berichtsseite optimiert, etwa 2–5-mal schneller, und eine neue Mitarbeiterübersicht in C#, Python und Django entwickelt.",
+      },
+      omnilan: {
+        role: "Praktikant Softwareentwicklung",
+        description: "C#-Software für ESP32-Geräte geschrieben, mit der Nutzer das Licht in einem Raum per Dashboard-Button schalten, und 30 Fehler in bestehendem Code behoben.",
+      },
+      kw1c: {
+        role: "Software Developer (MBO Niveau 4)",
+        description: "Ausbildung zum Softwareentwickler in 's-Hertogenbosch abgeschlossen und Diplom erhalten, mit Azure DevOps und Azure SQL in Schulprojekten.",
+      },
+    },
+  },
+  contact: {
+    label: "Kontakt",
+    title: "Lass uns reden",
+    text: "Sie suchen einen Junior-.NET- oder Full-Stack-Entwickler? Schreiben Sie mir eine E-Mail oder vernetzen Sie sich auf LinkedIn.",
+    email: "E-Mail schreiben",
+    cv: "Lebenslauf herunterladen",
+    cta: "Kontakt aufnehmen",
+  },
+  featured: {
+    github: "Auf GitHub ansehen",
+    private: "Kundenprojekt · Code nicht öffentlich",
+    items: {
+      dataDefence: {
+        title: "Data-Defence",
+        description: "Ein Spiel in C# und Unity: Finde den Eindringling in einer Papierfirma, bewältige Vorfälle wie Brände und entlasse Mitarbeitende, die Probleme verursachen.",
+      },
+      crm: {
+        title: "CRM-Systeme bei Innovaware",
+        description: "Backend-Funktionen für CRM-Systeme kleiner und mittlerer Unternehmen: C# (.NET 10), Laravel, REST-APIs, MySQL, GitLab CI/CD und eine KI-Helpdesk-Integration.",
+      },
+      portfolioSite: {
+        title: "Dieses Portfolio",
+        description: "Gebaut mit Next.js, React, TypeScript und Tailwind CSS, in zehn Sprachen. Die erste Version entstand mit Python und Django.",
+      },
+    },
+  },
   portfolio: {
-    label: "Tijme",
+    label: "Ausbildung",
     title: "Portfolio-Projekte",
+    exercisesTitle: "Schulübungen",
     projects: [
       {
         title: "Regenbogen-Projekt",
-        description:
-          "Span-Klassen und ansprechende Layouts mit CSS-Positionierung und Farbschemata für einen Regenbogeneffekt.",
+        description: "Span-Klassen und ansprechende Layouts mit CSS-Positionierung und Farbschemata für einen Regenbogeneffekt.",
       },
       {
         title: "Spieltabelle",
-        description:
-          "Fußballspiele übersichtlich dargestellt mit HTML-Tabellen und CSS-Styling.",
+        description: "Fußballspiele übersichtlich dargestellt mit HTML-Tabellen und CSS-Styling.",
       },
       {
         title: "CSS-Tabellenausrichtung",
-        description:
-          "Eine unordentliche HTML-Datei durch gezieltes CSS in eine ansprechende Darstellung verwandelt.",
+        description: "Eine unordentliche HTML-Datei durch gezieltes CSS in eine ansprechende Darstellung verwandelt.",
       },
       {
         title: "Rowspan und Colspan",
-        description:
-          "Mit Rowspan und Colspan experimentiert, um komplexe Tabellenlayouts zu bauen, gestaltet mit CSS-Klassen und IDs.",
+        description: "Mit Rowspan und Colspan experimentiert, um komplexe Tabellenlayouts zu bauen, gestaltet mit CSS-Klassen und IDs.",
       },
     ],
   },
@@ -73,7 +129,7 @@ const de: Dictionary = {
     role: "Bei Omnilan habe ich als Softwareentwickler gearbeitet und interne Systeme und Kommunikationswerkzeuge verbessert. Meine Hauptaufgaben waren die Entwicklung und Verbesserung des Lichtsteuerungssystems sowie die Vereinfachung des E-Mail-Kommunikationssystems zwischen den Mitarbeitern.",
     sections: [
       {
-        heading: "Entwicklung des Lichtsystems",
+        heading: "Verbesserung des E-Mail-Systems",
         projects: [
           {
             title: "ISPConfig",
@@ -90,7 +146,7 @@ const de: Dictionary = {
         ],
       },
       {
-        heading: "Verbesserung des E-Mail-Systems",
+        heading: "Entwicklung des Lichtsystems",
         projects: [
           {
             title: "Rememberz",
@@ -98,8 +154,7 @@ const de: Dictionary = {
           },
           {
             title: "Milight-Steuerungssystem",
-            description:
-              "Benutzereinstellungen für die Lichtsteuerung, einschließlich Farbanpassung.",
+            description: "Benutzereinstellungen für die Lichtsteuerung, einschließlich Farbanpassung.",
           },
           {
             title: "Rememberz-Hauptoberfläche",
@@ -113,20 +168,18 @@ const de: Dictionary = {
     label: "Praktikum 2",
     subtitle: "Webentwicklung & Online-Lernen",
     roleTitle: "Meine Rolle bei AB Transport",
-    role: "Bei AB Transport habe ich als Softwareentwickler in der IT-Abteilung gearbeitet und die E-Mail-Systeme des Unternehmens sowie deren optische Gestaltung verbessert. Ich habe ansprechendere E-Mail-Vorlagen und Oberflächen gebaut und mich mit strukturierten Online-Kursen in Python, Web-Frameworks und E-Mail-Design weitergebildet.",
+    role: "Bei AB Transport war ich Praktikant in der Softwareentwicklung in der IT-Abteilung. Ich habe die Datenbankabfragen hinter einer Berichtsseite optimiert, etwa 2–5-mal schneller, eine neue Mitarbeiterübersicht in C#, Python und Django entwickelt und die E-Mail-Vorlagen des Unternehmens verbessert. Aufgaben und Code wurden in Azure DevOps verwaltet.",
     sections: [
       {
         heading: "Webentwicklung & CMS-Projekte",
         projects: [
           {
             title: "Wagtail-CMS-Entwicklung",
-            description:
-              "Wagtail CMS in strukturierten Online-Kursen kennengelernt, um dynamische Content-Management-Systeme zu bauen.",
+            description: "Wagtail CMS in strukturierten Online-Kursen kennengelernt, um dynamische Content-Management-Systeme zu bauen.",
           },
           {
             title: "Content-Management-Systeme",
-            description:
-              "Interaktive Blogs mit FAQ-Bereichen und dynamischen Karussell-Komponenten erstellt.",
+            description: "Interaktive Blogs mit FAQ-Bereichen und dynamischen Karussell-Komponenten erstellt.",
           },
         ],
       },
@@ -135,8 +188,7 @@ const de: Dictionary = {
         projects: [
           {
             title: "Bootstrap-E-Mail-Vorlagen",
-            description:
-              "Responsive E-Mail-Signaturen und Layouts mit Bootstrap Email für AB Transport entworfen.",
+            description: "Responsive E-Mail-Signaturen und Layouts mit Bootstrap Email für AB Transport entworfen.",
           },
         ],
       },
@@ -145,13 +197,11 @@ const de: Dictionary = {
         projects: [
           {
             title: "Programmierdisziplinen",
-            description:
-              "Python, JavaScript, HTML & CSS, SQL und mehr in strukturierten Online-Programmen erkundet.",
+            description: "Python, JavaScript, HTML & CSS, SQL und mehr in strukturierten Online-Programmen erkundet.",
           },
           {
             title: "Codecademy-Python-Kurse",
-            description:
-              "Fortgeschrittene Python-Kurse sowie Django-Webentwicklung abgeschlossen.",
+            description: "Fortgeschrittene Python-Kurse sowie Django-Webentwicklung abgeschlossen.",
           },
         ],
       },

@@ -3,67 +3,123 @@ import type { Dictionary } from "../types";
 const sv: Dictionary = {
   meta: {
     title: "Tijme Vervoort — Portfolio",
-    description:
-      "Portfolio för Tijme Vervoort, fullstackutvecklare på Innovaware som bygger ERP-system i C#, TypeScript och React Native.",
+    description: "Portfolio för Tijme Vervoort, junior fullstackutvecklare på Innovaware som bygger CRM-system i C# (.NET 10) och Laravel med ett React / Next.js-gränssnitt.",
   },
   nav: {
     home: "Hem",
     portfolio: "Portfolio",
-    internship1: "Praktik 1",
-    internship2: "Praktik 2",
+    internship1: "Omnilan",
+    internship2: "AB Transport",
     language: "Språk",
   },
-  footer: { rights: "Alla rättigheter förbehållna." },
+  footer: {
+    rights: "Alla rättigheter förbehållna.",
+  },
   home: {
-    eyebrow: "Portfolio",
+    eyebrow: "Junior Full-Stack Developer · C# / .NET",
     iAm: "Jag är",
     explore: "Utforska nu",
     internships: "Praktikplatser",
-    aboutLabel: "Tijme",
+    aboutLabel: "Profil",
     aboutTitle: "Om mig",
-    selectedLabel: "Urval",
+    selectedLabel: "Utvalt",
     projectsTitle: "Projekt",
     photoAlt: "Porträtt av Tijme Vervoort",
   },
   profile: {
-    tagline:
-      "Fullstackutvecklare på Innovaware, bygger ERP-system i C# och TypeScript, med React Native för mobil.",
-    bio1: "Jag är 22 år och arbetar heltid som fullstackutvecklare på Innovaware. Jag har tagit examen som mjukvaruutvecklare (MBO nivå 4) på KW1C i 's-Hertogenbosch, efter att ha bytt från byggutbildningen. Nu bygger jag ERP-system i C# med TypeScript, plus en mobilapp i React Native.",
-    bio2: "Under studierna gjorde jag två praktikperioder, hos Omnilan och hos AB Transport, där jag arbetade med Python och Django. Jag byggde också en komplett webbplats för en idrottsklubb och flera webbprojekt. Min tidigare byggutbildning gav mig också praktisk projekterfarenhet: en restaurang med stålstomme, ett bostadshus från 1930-talet och en fritidsanläggning för ungdomar.",
+    tagline: "Junior fullstackutvecklare på Innovaware, bygger CRM-system i C# (.NET 10) och Laravel, med React / Next.js i frontend.",
+    bio1: "Jag är 22 år och arbetar heltid som junior fullstackutvecklare på Innovaware. Jag har tagit examen som mjukvaruutvecklare (MBO nivå 4) på KW1C i 's-Hertogenbosch, efter att ha bytt från byggutbildningen. Nu bygger jag CRM-system i C# (.NET 10) och Laravel, med REST-API:er mot ett React / Next.js-gränssnitt.",
+    bio2: "Under studierna gjorde jag två C#-praktiker. På Omnilan skrev jag mjukvara för ESP32-enheter som styr belysning från en instrumentpanel; på AB Transport gjorde jag databasfrågor snabbare och byggde en översikt för personalen i C#, Python och Django. Jag har också byggt Data-Defence (ett spel i C# och Unity), en webbplats för en idrottsklubb och den här portfolion.",
   },
   work: {
     label: "Innovaware",
     title: "Arbete",
-    role: "Full Stack Developer",
+    role: "Junior Full-Stack Developer",
     period: "Nuvarande tjänst",
-    description:
-      "Jag bygger ERP-system i C# och TypeScript och utvecklar den tillhörande mobilappen i React Native.",
+    description: "Jag bygger CRM-system för små och medelstora företag i C# (.NET 10) och Laravel, med REST-API:er som kopplar backend till ett React / Next.js-gränssnitt.",
     skillsLabel: "Teknologier",
   },
-  stats: ["År gammal", "Praktikperioder klara", "Nuvarande fokus", "Språk i bruk"],
+  stats: [
+    "funktioner levererade på Innovaware",
+    "problem åtgärdade på Omnilan",
+    "snabbare frågor på AB Transport",
+    "C#-praktiker genomförda",
+  ],
+  timeline: {
+    label: "Karriär",
+    title: "Tidslinje",
+    present: "Nu",
+    more: "Se praktik på {org}",
+    kinds: {
+      work: "Arbete",
+      internship: "Praktik",
+      education: "Utbildning",
+    },
+    items: {
+      innovaware: {
+        role: "Junior fullstackutvecklare",
+        description: "Jag bygger CRM-system för små och medelstora företag i C# (.NET 10) och Laravel, med REST-API:er mot ett React / Next.js-gränssnitt, GitLab CI/CD-pipelines och en AI-helpdeskintegration.",
+      },
+      abTransport: {
+        role: "Praktikant inom mjukvaruutveckling",
+        description: "Optimerade databasfrågorna bakom en rapportsida, ungefär 2–5 gånger snabbare, och byggde en ny översikt för personalen i C#, Python och Django.",
+      },
+      omnilan: {
+        role: "Praktikant inom mjukvaruutveckling",
+        description: "Skrev C#-mjukvara för ESP32-enheter som låter användare tända belysningen i ett rum från en knapp på en instrumentpanel, och åtgärdade 30 problem i befintlig kod.",
+      },
+      kw1c: {
+        role: "Software Developer (MBO nivå 4)",
+        description: "Slutförde utbildningen till mjukvaruutvecklare i 's-Hertogenbosch och tog examen, med Azure DevOps och Azure SQL i skolprojekt.",
+      },
+    },
+  },
+  contact: {
+    label: "Kontakt",
+    title: "Hör av dig",
+    text: "Letar du efter en junior .NET- eller fullstackutvecklare? Skicka ett mejl eller kontakta mig på LinkedIn.",
+    email: "Mejla mig",
+    cv: "Ladda ner CV",
+    cta: "Kontakta mig",
+  },
+  featured: {
+    github: "Visa på GitHub",
+    private: "Kunduppdrag · koden är inte offentlig",
+    items: {
+      dataDefence: {
+        title: "Data-Defence",
+        description: "Ett spel i C# och Unity: hitta infiltratören på ett pappersföretag, hantera incidenter som bränder och säg upp anställda som ställer till problem.",
+      },
+      crm: {
+        title: "CRM-system på Innovaware",
+        description: "Backendfunktioner för CRM-system till små och medelstora företag: C# (.NET 10), Laravel, REST-API:er, MySQL, GitLab CI/CD och en AI-helpdeskintegration.",
+      },
+      portfolioSite: {
+        title: "Den här portfolion",
+        description: "Byggd med Next.js, React, TypeScript och Tailwind CSS, på tio språk. Den första versionen gjorde jag i Python och Django.",
+      },
+    },
+  },
   portfolio: {
-    label: "Tijme",
+    label: "Utbildning",
     title: "Portfolioprojekt",
+    exercisesTitle: "Skoluppgifter",
     projects: [
       {
         title: "Regnbågsprojektet",
-        description:
-          "Span-klasser och visuellt tilltalande layouter, med CSS-positionering och färgscheman för en regnbågseffekt.",
+        description: "Span-klasser och visuellt tilltalande layouter, med CSS-positionering och färgscheman för en regnbågseffekt.",
       },
       {
         title: "Matchtabell",
-        description:
-          "Fotbollsmatcher presenterade överskådligt med HTML-tabeller och CSS-stil.",
+        description: "Fotbollsmatcher presenterade överskådligt med HTML-tabeller och CSS-stil.",
       },
       {
         title: "Tabelljustering med CSS",
-        description:
-          "En rörig HTML-fil förvandlad till en snygg presentation med målinriktad CSS.",
+        description: "En rörig HTML-fil förvandlad till en snygg presentation med målinriktad CSS.",
       },
       {
         title: "Rowspan och colspan",
-        description:
-          "Experimenterade med rowspan och colspan för att bygga avancerade tabelllayouter, stylade med CSS-klasser och ID:n.",
+        description: "Experimenterade med rowspan och colspan för att bygga avancerade tabelllayouter, stylade med CSS-klasser och ID:n.",
       },
     ],
   },
@@ -73,7 +129,7 @@ const sv: Dictionary = {
     role: "Hos Omnilan arbetade jag som mjukvaruutvecklare och förbättrade interna system och kommunikationsverktyg. Mina huvuduppgifter var att utveckla och förbättra ljusstyrningssystemet och förenkla e-postsystemet mellan de anställda.",
     sections: [
       {
-        heading: "Utveckling av ljussystem",
+        heading: "Förbättring av e-postsystemet",
         projects: [
           {
             title: "ISPConfig",
@@ -81,8 +137,7 @@ const sv: Dictionary = {
           },
           {
             title: "Hantering av e-postdomäner",
-            description:
-              "Skapa e-postdomäner för adresser som hör till webbplatsen.",
+            description: "Skapa e-postdomäner för adresser som hör till webbplatsen.",
           },
           {
             title: "Konfiguration av e-postadresser",
@@ -91,7 +146,7 @@ const sv: Dictionary = {
         ],
       },
       {
-        heading: "Förbättring av e-postsystemet",
+        heading: "Utveckling av ljussystem",
         projects: [
           {
             title: "Rememberz",
@@ -99,8 +154,7 @@ const sv: Dictionary = {
           },
           {
             title: "Milight-styrsystem",
-            description:
-              "Användarinställningar för ljusstyrning, inklusive färgjustering.",
+            description: "Användarinställningar för ljusstyrning, inklusive färgjustering.",
           },
           {
             title: "Rememberz huvudgränssnitt",
@@ -114,20 +168,18 @@ const sv: Dictionary = {
     label: "Praktik 2",
     subtitle: "Webbutveckling och nätbaserat lärande",
     roleTitle: "Min roll hos AB Transport",
-    role: "Hos AB Transport arbetade jag som mjukvaruutvecklare på IT-avdelningen och förbättrade företagets e-postsystem och hur de ser ut. Jag byggde snyggare e-postmallar och gränssnitt och lade tid på strukturerade nätkurser för att bli bättre på Python, webbramverk och e-postdesign.",
+    role: "På AB Transport gjorde jag praktik som mjukvaruutvecklare på IT-avdelningen. Jag optimerade databasfrågorna bakom en rapportsida, ungefär 2–5 gånger snabbare, byggde en ny översikt för personalen i C#, Python och Django och förbättrade företagets e-postmallar. Uppgifter och kod hanterades i Azure DevOps.",
     sections: [
       {
         heading: "Webbutveckling och CMS-projekt",
         projects: [
           {
             title: "Utveckling med Wagtail CMS",
-            description:
-              "Utforskade Wagtail CMS genom strukturerade nätkurser för att bygga dynamiska innehållssystem.",
+            description: "Utforskade Wagtail CMS genom strukturerade nätkurser för att bygga dynamiska innehållssystem.",
           },
           {
             title: "Innehållshanteringssystem",
-            description:
-              "Byggde interaktiva bloggar med FAQ-sektioner och dynamiska karuseller.",
+            description: "Byggde interaktiva bloggar med FAQ-sektioner och dynamiska karuseller.",
           },
         ],
       },
@@ -136,8 +188,7 @@ const sv: Dictionary = {
         projects: [
           {
             title: "Bootstrap-e-postmallar",
-            description:
-              "Utformade responsiva e-postsignaturer och layouter med Bootstrap Email för AB Transport.",
+            description: "Utformade responsiva e-postsignaturer och layouter med Bootstrap Email för AB Transport.",
           },
         ],
       },
@@ -146,13 +197,11 @@ const sv: Dictionary = {
         projects: [
           {
             title: "Programmeringsdiscipliner",
-            description:
-              "Utforskade Python, JavaScript, HTML och CSS, SQL och mer genom strukturerade nätprogram.",
+            description: "Utforskade Python, JavaScript, HTML och CSS, SQL och mer genom strukturerade nätprogram.",
           },
           {
             title: "Python-kurser på Codecademy",
-            description:
-              "Genomförde Python-kurser på mellannivå och avancerad nivå, plus webbutveckling med Django.",
+            description: "Genomförde Python-kurser på mellannivå och avancerad nivå, plus webbutveckling med Django.",
           },
         ],
       },

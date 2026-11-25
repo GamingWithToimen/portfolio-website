@@ -12,18 +12,101 @@ export type Section = {
   projects: Project[];
 };
 
-export const photo = "/images/profile.jpg";
+export const photo = "/images/profile-innovaware.jpg";
 
-export const statValues = ["22", "2", "ERP", "4+"] as const;
+// Numbers from the CV; labels are in dict.stats (same order)
+export const statValues = ["6–10", "30", "2–5x", "2"] as const;
 
-export const employer = "Innovaware";
+export const contactLinks = {
+  email: "tijmevervoort@gmail.com",
+  // Fixed subject so a Gmail filter can label mail sent from the site
+  mailSubject: "[Portfolio] Contact via tijmevervoort website",
+  linkedin: "https://www.linkedin.com/in/tijme-vervoort-529406204",
+  github: "https://github.com/GamingWithToimen",
+  cv: "/cv/Tijme-Vervoort-CV.pdf",
+} as const;
 
-export const workSkills = ["C#", "TypeScript", "React Native", "ERP"] as const;
+export type FeaturedKey = "crm" | "dataDefence" | "portfolioSite";
+
+// Highlighted work; titles and descriptions are in dict.featured.items
+export const featured: { key: FeaturedKey; tags: string[]; github?: string }[] = [
+  {
+    key: "crm",
+    tags: ["C# / .NET 10", "Laravel", "REST APIs", "MySQL", "GitLab CI/CD"],
+  },
+  {
+    key: "dataDefence",
+    tags: ["C#", "Unity"],
+    github: "https://github.com/GamingWithToimen/Data-Defence",
+  },
+  {
+    key: "portfolioSite",
+    tags: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    github: "https://github.com/GamingWithToimen/portfolio-website",
+  },
+];
+
+export const workSkills = [
+  "C#",
+  ".NET 10",
+  "Laravel",
+  "REST APIs",
+  "React",
+  "Next.js",
+  "CRM",
+] as const;
+
+// Words for the orange band on each page
+export const bandItems = {
+  portfolio: ["C#", "Unity", "Next.js", "React", "HTML5", "CSS3"],
+  internship1: ["C#", "ESP32", "Azure DevOps", "ISPConfig", "Rememberz", "Milight"],
+  internship2: ["C#", "Python", "Django", "Azure DevOps", "Wagtail", "Bootstrap Email"],
+} as const;
 
 export const companies = {
   internship1: "Omnilan",
   internship2: "AB Transport",
 } as const;
+
+export type TimelineEntry = {
+  /** Key into dict.timeline.items. */
+  key: "innovaware" | "abTransport" | "omnilan" | "kw1c";
+  org: string;
+  kind: "work" | "internship" | "education";
+  /** "YYYY-MM"; end null means current. */
+  start: string;
+  end: string | null;
+  /** Page under /[lang]/ with more detail, if any. */
+  page?: string;
+};
+
+// Newest first. Dates from the CV.
+export const timeline: TimelineEntry[] = [
+  { key: "innovaware", org: "Innovaware", kind: "work", start: "2026-09", end: null },
+  {
+    key: "abTransport",
+    org: "AB Transport",
+    kind: "internship",
+    start: "2025-02",
+    end: "2025-06",
+    page: "internship-2",
+  },
+  {
+    key: "omnilan",
+    org: "Omnilan",
+    kind: "internship",
+    start: "2023-08",
+    end: "2024-02",
+    page: "internship-1",
+  },
+  {
+    key: "kw1c",
+    org: "Koning Willem I College",
+    kind: "education",
+    start: "2022-08",
+    end: "2026-06",
+  },
+];
 
 export const portfolioImages = [
   "/images/regennboog.png",
