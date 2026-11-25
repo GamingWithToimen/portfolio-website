@@ -58,7 +58,7 @@ export type Dictionary = {
     github: string;
     private: string;
     items: Record<
-      "dataDefence" | "crm" | "portfolioSite",
+      "dataDefence" | "crm" | "signature" | "portfolioSite",
       { title: string; description: string }
     >;
   };

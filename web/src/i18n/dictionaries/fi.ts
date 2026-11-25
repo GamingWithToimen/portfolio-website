@@ -86,13 +86,17 @@ const fi: Dictionary = {
     github: "Katso GitHubissa",
     private: "Asiakasprojekti · koodi ei ole julkinen",
     items: {
-      dataDefence: {
-        title: "Data-Defence",
-        description: "Peli C#:lla ja Unitylla: etsi soluttautuja paperiyhtiöstä, hoida tapahtumia kuten tulipaloja ja irtisano ongelmia aiheuttavat työntekijät.",
-      },
       crm: {
         title: "CRM-järjestelmät Innovawarella",
         description: "Taustajärjestelmän ominaisuuksia pk-yritysten CRM-järjestelmiin: C# (.NET 10), Laravel, REST-rajapinnat, MySQL, GitLab CI/CD ja tekoälypohjainen helpdesk-integraatio.",
+      },
+      signature: {
+        title: "Sähköpostiallekirjoitus AB Transportille",
+        description: "Responsiivinen HTML-sähköpostiallekirjoitus AB Transportille ja AB Solutionsille: molemmat brändit, yhteystiedot ja somelinkit. Testattu Gmailissa, Outlookissa, Apple Mailissa ja mobiilisovelluksissa.",
+      },
+      dataDefence: {
+        title: "Data-Defence",
+        description: "Peli C#:lla ja Unitylla: etsi soluttautuja paperiyhtiöstä, hoida tapahtumia kuten tulipaloja ja irtisano ongelmia aiheuttavat työntekijät.",
       },
       portfolioSite: {
         title: "Tämä portfolio",

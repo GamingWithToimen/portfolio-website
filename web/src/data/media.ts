@@ -26,13 +26,18 @@ export const contactLinks = {
   cv: "/cv/Tijme-Vervoort-CV.pdf",
 } as const;
 
-export type FeaturedKey = "crm" | "dataDefence" | "portfolioSite";
+export type FeaturedKey = "crm" | "signature" | "dataDefence" | "portfolioSite";
 
 // Highlighted work; titles and descriptions are in dict.featured.items
 export const featured: { key: FeaturedKey; tags: string[]; github?: string }[] = [
   {
     key: "crm",
     tags: ["C# / .NET 10", "Laravel", "REST APIs", "MySQL", "GitLab CI/CD"],
+  },
+  {
+    key: "signature",
+    tags: ["HTML", "CSS", "Email clients"],
+    github: "https://github.com/GamingWithToimen/siganture",
   },
   {
     key: "dataDefence",

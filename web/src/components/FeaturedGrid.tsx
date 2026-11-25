@@ -3,10 +3,10 @@ import Reveal from "@/components/Reveal";
 import { featured } from "@/data/media";
 import type { Dictionary } from "@/i18n/types";
 
-// The three highlighted projects (CRM work, Data-Defence, this site).
+// The highlighted projects (CRM work, email signature, Data-Defence, this site).
 export default function FeaturedGrid({ texts }: { texts: Dictionary["featured"] }) {
   return (
-    <div className="grid gap-6 md:grid-cols-3">
+    <div className="grid gap-6 md:grid-cols-2 min-[1800px]:grid-cols-4">
       {featured.map((f, i) => (
         <Reveal key={f.key} delay={i * 120} className="h-full">
           <FeaturedCard

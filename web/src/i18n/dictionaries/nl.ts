@@ -86,13 +86,17 @@ const nl: Dictionary = {
     github: "Bekijk op GitHub",
     private: "Klantwerk · code niet openbaar",
     items: {
-      dataDefence: {
-        title: "Data-Defence",
-        description: "Een game in C# en Unity: vind de infiltrant bij een papierbedrijf, handel incidenten zoals branden af en ontsla medewerkers die problemen veroorzaken.",
-      },
       crm: {
         title: "CRM-systemen bij Innovaware",
         description: "Back-endfeatures voor CRM-systemen van het mkb: C# (.NET 10), Laravel, REST API's, MySQL, GitLab CI/CD en een AI-helpdeskintegratie.",
+      },
+      signature: {
+        title: "E-mailhandtekening voor AB Transport",
+        description: "Responsieve HTML-e-mailhandtekening voor AB Transport en AB Solutions, met beide merken, contactgegevens en sociale links. Getest in Gmail, Outlook, Apple Mail en mobiele mailapps.",
+      },
+      dataDefence: {
+        title: "Data-Defence",
+        description: "Een game in C# en Unity: vind de infiltrant bij een papierbedrijf, handel incidenten zoals branden af en ontsla medewerkers die problemen veroorzaken.",
       },
       portfolioSite: {
         title: "Dit portfolio",

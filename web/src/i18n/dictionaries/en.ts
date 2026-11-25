@@ -86,13 +86,17 @@ const en: Dictionary = {
     github: "View on GitHub",
     private: "Client work · code not public",
     items: {
-      dataDefence: {
-        title: "Data-Defence",
-        description: "A game in C# and Unity: find the infiltrator at a paper company, handle incidents such as fires and dismiss employees who cause trouble.",
-      },
       crm: {
         title: "CRM systems at Innovaware",
         description: "Back-end features for CRM systems used by small and medium-sized businesses: C# (.NET 10), Laravel, REST APIs, MySQL, GitLab CI/CD and an AI helpdesk integration.",
+      },
+      signature: {
+        title: "Email signature for AB Transport",
+        description: "Responsive HTML email signature for AB Transport and AB Solutions, with both brands, contact details and social links. Tested in Gmail, Outlook, Apple Mail and mobile clients.",
+      },
+      dataDefence: {
+        title: "Data-Defence",
+        description: "A game in C# and Unity: find the infiltrator at a paper company, handle incidents such as fires and dismiss employees who cause trouble.",
       },
       portfolioSite: {
         title: "This portfolio",

@@ -86,13 +86,17 @@ const da: Dictionary = {
     github: "Se på GitHub",
     private: "Kundeprojekt · koden er ikke offentlig",
     items: {
-      dataDefence: {
-        title: "Data-Defence",
-        description: "Et spil i C# og Unity: find infiltratoren i et papirfirma, håndter hændelser som brande og afskedig medarbejdere, der skaber problemer.",
-      },
       crm: {
         title: "CRM-systemer hos Innovaware",
         description: "Backend-funktioner til CRM-systemer for små og mellemstore virksomheder: C# (.NET 10), Laravel, REST-API'er, MySQL, GitLab CI/CD og en AI-helpdeskintegration.",
+      },
+      signature: {
+        title: "E-mailsignatur til AB Transport",
+        description: "Responsiv HTML-e-mailsignatur til AB Transport og AB Solutions med begge brands, kontaktoplysninger og links til sociale medier. Testet i Gmail, Outlook, Apple Mail og mobile mailapps.",
+      },
+      dataDefence: {
+        title: "Data-Defence",
+        description: "Et spil i C# og Unity: find infiltratoren i et papirfirma, håndter hændelser som brande og afskedig medarbejdere, der skaber problemer.",
       },
       portfolioSite: {
         title: "Denne portfolio",

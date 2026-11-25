@@ -86,13 +86,17 @@ const es: Dictionary = {
     github: "Ver en GitHub",
     private: "Proyecto de cliente · código no público",
     items: {
-      dataDefence: {
-        title: "Data-Defence",
-        description: "Un juego en C# y Unity: encuentra al infiltrado en una empresa papelera, gestiona incidentes como incendios y despide a los empleados que causan problemas.",
-      },
       crm: {
         title: "Sistemas CRM en Innovaware",
         description: "Funcionalidades back-end para sistemas CRM de pymes: C# (.NET 10), Laravel, API REST, MySQL, GitLab CI/CD y una integración de helpdesk con IA.",
+      },
+      signature: {
+        title: "Firma de correo para AB Transport",
+        description: "Firma de correo HTML adaptable para AB Transport y AB Solutions, con ambas marcas, datos de contacto y enlaces a redes sociales. Probada en Gmail, Outlook, Apple Mail y clientes móviles.",
+      },
+      dataDefence: {
+        title: "Data-Defence",
+        description: "Un juego en C# y Unity: encuentra al infiltrado en una empresa papelera, gestiona incidentes como incendios y despide a los empleados que causan problemas.",
       },
       portfolioSite: {
         title: "Este portafolio",
