@@ -11,9 +11,16 @@ const fi: Dictionary = {
     internship1: "Omnilan",
     internship2: "AB Transport",
     language: "Kieli",
+    work: "Työt",
+    about: "Minusta",
+    stack: "Stack",
+    backHome: "Takaisin etusivulle",
+    allProjects: "Kaikki projektit",
+    nextInternship: "Seuraava harjoittelu",
   },
   footer: {
     rights: "Kaikki oikeudet pidätetään.",
+    builtWith: "Rakennettu C#:lla, kahvilla ja uteliaisuudella",
   },
   home: {
     eyebrow: "Junior Full-Stack Developer · C# / .NET",
@@ -25,6 +32,25 @@ const fi: Dictionary = {
     selectedLabel: "Nostot",
     projectsTitle: "Projektit",
     photoAlt: "Tijme Vervoortin muotokuva",
+    terminalWho: "kehittäjä, rakentaja, pelaaja",
+    terminalStatus: "rakentaa CRM-järjestelmiä @ Innovaware",
+  },
+  stack: {
+    label: "Käytössä",
+    title: "Stack",
+    groups: {
+      backend: "Taustajärjestelmä",
+      frontend: "Käyttöliittymä",
+      data: "Data",
+      hardware: "Laitteet ja pelit",
+      tooling: "Työkalut",
+      also: "Lisäksi",
+    },
+  },
+  internshipMeta: {
+    role: "Rooli",
+    stack: "Stack",
+    result: "Tulos",
   },
   profile: {
     tagline: "Junior full stack -kehittäjä Innovawaressa, rakennan CRM-järjestelmiä C#:lla (.NET 10) ja Laravelilla, käyttöliittymänä React / Next.js.",
@@ -81,6 +107,7 @@ const fi: Dictionary = {
     email: "Lähetä sähköpostia",
     cv: "Lataa CV",
     cta: "Ota yhteyttä",
+    location: "Nistelrode · Uden-Veghelin alue · hollanti ja englanti (B2)",
   },
   featured: {
     github: "Katso GitHubissa",
@@ -108,6 +135,8 @@ const fi: Dictionary = {
     label: "Koulutus",
     title: "Portfolioprojektit",
     exercisesTitle: "Kouluharjoitukset",
+    intro: "Asiakastyöt, harjoittelutyöt ja omat projektit. Jokaisesta projektista näet, mitä se tekee, millä se on rakennettu ja missä koodin voi nähdä.",
+    exercisesSubtitle: "Tehtäviä Koning Willem I Collegesta",
     projects: [
       {
         title: "Sateenkaariprojekti",

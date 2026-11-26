@@ -20,7 +20,7 @@ export default function Error({ reset }: { error: Error; reset: () => void }) {
       <button
         type="button"
         onClick={reset}
-        className="block border-2 border-line px-6 py-3.5 uppercase transition-colors hover:border-accent hover:text-accent"
+        className="inline-flex min-h-12 items-center px-2 font-display text-[0.8125rem] font-extrabold tracking-[0.14em] text-white uppercase transition-colors hover:text-[#bdbdbd]"
       >
         {t.retry}
       </button>

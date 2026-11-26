@@ -11,9 +11,16 @@ const en: Dictionary = {
     internship1: "Omnilan",
     internship2: "AB Transport",
     language: "Language",
+    work: "Work",
+    about: "About",
+    stack: "Stack",
+    backHome: "Back to home",
+    allProjects: "All projects",
+    nextInternship: "Next internship",
   },
   footer: {
     rights: "All rights reserved.",
+    builtWith: "Built with C#, coffee & curiosity",
   },
   home: {
     eyebrow: "Junior Full-Stack Developer · C# / .NET",
@@ -25,6 +32,25 @@ const en: Dictionary = {
     selectedLabel: "Featured",
     projectsTitle: "Projects",
     photoAlt: "Portrait of Tijme Vervoort",
+    terminalWho: "developer, builder, gamer",
+    terminalStatus: "building CRMs @ Innovaware",
+  },
+  stack: {
+    label: "My",
+    title: "Stack",
+    groups: {
+      backend: "Back-end",
+      frontend: "Front-end",
+      data: "Data",
+      hardware: "Hardware & games",
+      tooling: "Tooling",
+      also: "Also",
+    },
+  },
+  internshipMeta: {
+    role: "Role",
+    stack: "Stack",
+    result: "Result",
   },
   profile: {
     tagline: "Junior Full-Stack Developer at Innovaware, building CRM systems in C# (.NET 10) and Laravel, with React / Next.js on the front-end.",
@@ -81,6 +107,7 @@ const en: Dictionary = {
     email: "Email me",
     cv: "Download CV",
     cta: "Get in touch",
+    location: "Nistelrode · Uden-Veghel area · Dutch and English (B2)",
   },
   featured: {
     github: "View on GitHub",
@@ -108,6 +135,8 @@ const en: Dictionary = {
     label: "Education",
     title: "Portfolio projects",
     exercisesTitle: "School exercises",
+    intro: "Client work, internship work and personal projects. Each project shows what it does, what it was built with and where to see the code.",
+    exercisesSubtitle: "Assignments from Koning Willem I College",
     projects: [
       {
         title: "Rainbow Project",

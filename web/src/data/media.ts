@@ -15,7 +15,7 @@ export type Section = {
 export const photo = "/images/profile-innovaware.jpg";
 
 // Numbers from the CV; labels are in dict.stats (same order)
-export const statValues = ["6–10", "30", "2–5x", "2"] as const;
+export const statValues = ["6–10", "30", "2–5×", "2"] as const;
 
 export const contactLinks = {
   email: "tijmevervoort@gmail.com",
@@ -28,42 +28,67 @@ export const contactLinks = {
 
 export type FeaturedKey = "crm" | "signature" | "dataDefence" | "portfolioSite";
 
-// Highlighted work; titles and descriptions are in dict.featured.items
-export const featured: { key: FeaturedKey; tags: string[]; github?: string }[] = [
+/** Drawn (hatched) artwork shown in the device frame when there is no screenshot. */
+export type ArtKind = "dashboard" | "target" | "devices";
+
+export type Featured = {
+  key: FeaturedKey;
+  year: number;
+  tags: string[];
+  github?: string;
+  /** Screenshot shown inside the laptop frame. */
+  image?: string;
+  /** Fallback artwork when there is no (public) screenshot, e.g. client work. */
+  art?: ArtKind;
+};
+
+// Highlighted work; titles and descriptions are in dict.featured.items.
+// The home page shows the first three.
+export const featured: Featured[] = [
   {
     key: "crm",
+    year: 2026,
     tags: ["C# / .NET 10", "Laravel", "REST APIs", "MySQL", "GitLab CI/CD"],
-  },
-  {
-    key: "signature",
-    tags: ["HTML", "CSS", "Email clients"],
-    github: "https://github.com/GamingWithToimen/siganture",
+    // Test environment, every name and amount blurred
+    image: "/images/crm-projecten.jpg",
   },
   {
     key: "dataDefence",
+    year: 2024,
     tags: ["C#", "Unity"],
     github: "https://github.com/GamingWithToimen/Data-Defence",
+    art: "target",
+  },
+  {
+    key: "signature",
+    year: 2025,
+    tags: ["HTML", "CSS", "Email clients"],
+    github: "https://github.com/GamingWithToimen/siganture",
+    image: "/images/bootstrap_email.png",
   },
   {
     key: "portfolioSite",
+    year: 2026,
     tags: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
     github: "https://github.com/GamingWithToimen/portfolio-website",
+    art: "devices",
   },
 ];
 
-export const workSkills = [
-  "C#",
-  ".NET 10",
-  "Laravel",
-  "REST APIs",
-  "React",
-  "Next.js",
-  "CRM",
-] as const;
+export type StackKey = "backend" | "frontend" | "data" | "hardware" | "tooling" | "also";
 
-// Words for the orange band on each page
+// The "My stack" grid; group names are in dict.stack.groups
+export const stack: { key: StackKey; items: string[] }[] = [
+  { key: "backend", items: ["C#", ".NET 10", "Laravel", "REST APIs"] },
+  { key: "frontend", items: ["React", "Next.js", "TypeScript", "Tailwind CSS"] },
+  { key: "data", items: ["MySQL", "Azure SQL"] },
+  { key: "hardware", items: ["ESP32", "Unity"] },
+  { key: "tooling", items: ["Git", "GitLab CI/CD", "GitHub", "Azure DevOps"] },
+  { key: "also", items: ["Python", "Django", "Wagtail"] },
+];
+
+// Tech used during each internship (shown in the facts grid at the top)
 export const bandItems = {
-  portfolio: ["C#", "Unity", "Next.js", "React", "HTML5", "CSS3"],
   internship1: ["C#", "ESP32", "Azure DevOps", "ISPConfig", "Rememberz", "Milight"],
   internship2: ["C#", "Python", "Django", "Azure DevOps", "Wagtail", "Bootstrap Email"],
 } as const;
@@ -82,7 +107,9 @@ export type TimelineEntry = {
   start: string;
   end: string | null;
   /** Page under /[lang]/ with more detail, if any. */
-  page?: string;
+  page?: "internship-1" | "internship-2";
+  /** Index into statValues / dict.stats for the headline result of this entry. */
+  stat?: number;
 };
 
 // Newest first. Dates from the CV.
@@ -95,6 +122,7 @@ export const timeline: TimelineEntry[] = [
     start: "2025-02",
     end: "2025-06",
     page: "internship-2",
+    stat: 2,
   },
   {
     key: "omnilan",
@@ -103,6 +131,7 @@ export const timeline: TimelineEntry[] = [
     start: "2023-08",
     end: "2024-02",
     page: "internship-1",
+    stat: 1,
   },
   {
     key: "kw1c",
@@ -112,6 +141,11 @@ export const timeline: TimelineEntry[] = [
     end: "2026-06",
   },
 ];
+
+/** The internships, newest first (used for the cards and the "next internship" link). */
+export const internships = timeline.filter(
+  (t): t is TimelineEntry & { page: NonNullable<TimelineEntry["page"]> } => Boolean(t.page),
+);
 
 export const portfolioImages = [
   "/images/regennboog.png",

@@ -11,9 +11,16 @@ const fr: Dictionary = {
     internship1: "Omnilan",
     internship2: "AB Transport",
     language: "Langue",
+    work: "Travaux",
+    about: "À propos",
+    stack: "Stack",
+    backHome: "Retour à l'accueil",
+    allProjects: "Tous les projets",
+    nextInternship: "Stage suivant",
   },
   footer: {
     rights: "Tous droits réservés.",
+    builtWith: "Construit avec du C#, du café et de la curiosité",
   },
   home: {
     eyebrow: "Junior Full-Stack Developer · C# / .NET",
@@ -25,6 +32,25 @@ const fr: Dictionary = {
     selectedLabel: "À la une",
     projectsTitle: "Projets",
     photoAlt: "Portrait de Tijme Vervoort",
+    terminalWho: "développeur, bâtisseur, gamer",
+    terminalStatus: "construit des CRM @ Innovaware",
+  },
+  stack: {
+    label: "Ma",
+    title: "Stack",
+    groups: {
+      backend: "Back-end",
+      frontend: "Front-end",
+      data: "Données",
+      hardware: "Matériel & jeux",
+      tooling: "Outils",
+      also: "Aussi",
+    },
+  },
+  internshipMeta: {
+    role: "Rôle",
+    stack: "Stack",
+    result: "Résultat",
   },
   profile: {
     tagline: "Développeur full-stack junior chez Innovaware, je crée des systèmes CRM en C# (.NET 10) et Laravel, avec React / Next.js côté front-end.",
@@ -81,6 +107,7 @@ const fr: Dictionary = {
     email: "M'écrire",
     cv: "Télécharger le CV",
     cta: "Me contacter",
+    location: "Nistelrode · région d'Uden-Veghel · néerlandais et anglais (B2)",
   },
   featured: {
     github: "Voir sur GitHub",
@@ -108,6 +135,8 @@ const fr: Dictionary = {
     label: "Formation",
     title: "Projets du portfolio",
     exercisesTitle: "Exercices scolaires",
+    intro: "Travaux clients, travaux de stage et projets personnels. Pour chaque projet : ce qu'il fait, avec quoi il a été construit et où voir le code.",
+    exercisesSubtitle: "Exercices du Koning Willem I College",
     projects: [
       {
         title: "Projet arc-en-ciel",

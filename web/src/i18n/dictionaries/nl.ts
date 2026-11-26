@@ -11,9 +11,16 @@ const nl: Dictionary = {
     internship1: "Omnilan",
     internship2: "AB Transport",
     language: "Taal",
+    work: "Werk",
+    about: "Over mij",
+    stack: "Stack",
+    backHome: "Terug naar home",
+    allProjects: "Alle projecten",
+    nextInternship: "Volgende stage",
   },
   footer: {
     rights: "Alle rechten voorbehouden.",
+    builtWith: "Gebouwd met C#, koffie & nieuwsgierigheid",
   },
   home: {
     eyebrow: "Junior Full-Stack Developer · C# / .NET",
@@ -25,6 +32,25 @@ const nl: Dictionary = {
     selectedLabel: "Uitgelicht",
     projectsTitle: "Projecten",
     photoAlt: "Portret van Tijme Vervoort",
+    terminalWho: "developer, bouwer, gamer",
+    terminalStatus: "bouwt CRM's @ Innovaware",
+  },
+  stack: {
+    label: "Mijn",
+    title: "Stack",
+    groups: {
+      backend: "Back-end",
+      frontend: "Front-end",
+      data: "Data",
+      hardware: "Hardware & games",
+      tooling: "Tooling",
+      also: "Ook",
+    },
+  },
+  internshipMeta: {
+    role: "Rol",
+    stack: "Stack",
+    result: "Resultaat",
   },
   profile: {
     tagline: "Junior Full-Stack Developer bij Innovaware, bouwt CRM-systemen in C# (.NET 10) en Laravel, met React / Next.js aan de front-end.",
@@ -81,6 +107,7 @@ const nl: Dictionary = {
     email: "Mail mij",
     cv: "Download cv",
     cta: "Neem contact op",
+    location: "Nistelrode · regio Uden-Veghel · Nederlands en Engels (B2)",
   },
   featured: {
     github: "Bekijk op GitHub",
@@ -108,6 +135,8 @@ const nl: Dictionary = {
     label: "Opleiding",
     title: "Portfolioprojecten",
     exercisesTitle: "Schoolopdrachten",
+    intro: "Klantwerk, stagewerk en eigen projecten. Bij elk project staat wat het doet, waarmee het gebouwd is en waar je de code kunt bekijken.",
+    exercisesSubtitle: "Opdrachten van het Koning Willem I College",
     projects: [
       {
         title: "Regenboogproject",

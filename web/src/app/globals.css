@@ -1,13 +1,14 @@
 @import "tailwindcss";
 
+/* Monochrome look: black and white sections, one yellow accent used sparingly.
+   The accent is only ever used on black (it has too little contrast on white). */
 :root {
   --bg: #000000;
-  --surface: #0e0e0e;
+  --surface: #0a0a0a;
   --line: #2a2a2a;
   --text: #ffffff;
-  --muted: #8c8c8c;
-  --accent: #ff6a2b;
-  --block: #ff6a2b;
+  --muted: #a8a8a8;
+  --accent: #f5e400;
 }
 
 @theme inline {
@@ -16,19 +17,9 @@
   --color-line: var(--line);
   --color-muted: var(--muted);
   --color-accent: var(--accent);
-  --color-block: var(--block);
   --font-display: var(--font-montserrat), system-ui, sans-serif;
-  --font-sans: var(--font-montserrat), system-ui, sans-serif;
-
-  --animate-marquee: marquee 35s linear infinite;
-  @keyframes marquee {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(-50%);
-    }
-  }
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, monospace;
 }
 
 html {
@@ -43,6 +34,14 @@ body {
 ::selection {
   background: var(--accent);
   color: #000;
+}
+
+/* Faint 64px grid behind the hero and contact sections */
+.bg-grid {
+  background-image:
+    linear-gradient(#161616 1px, transparent 1px),
+    linear-gradient(90deg, #161616 1px, transparent 1px);
+  background-size: 64px 64px;
 }
 
 @keyframes rise {

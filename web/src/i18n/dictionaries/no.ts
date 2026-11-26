@@ -11,9 +11,16 @@ const no: Dictionary = {
     internship1: "Omnilan",
     internship2: "AB Transport",
     language: "Språk",
+    work: "Arbeid",
+    about: "Om meg",
+    stack: "Stack",
+    backHome: "Tilbake til forsiden",
+    allProjects: "Alle prosjekter",
+    nextInternship: "Neste praksis",
   },
   footer: {
     rights: "Alle rettigheter forbeholdt.",
+    builtWith: "Bygget med C#, kaffe og nysgjerrighet",
   },
   home: {
     eyebrow: "Junior Full-Stack Developer · C# / .NET",
@@ -25,6 +32,25 @@ const no: Dictionary = {
     selectedLabel: "Utvalgt",
     projectsTitle: "Prosjekter",
     photoAlt: "Portrett av Tijme Vervoort",
+    terminalWho: "utvikler, bygger, gamer",
+    terminalStatus: "bygger CRM-er @ Innovaware",
+  },
+  stack: {
+    label: "Min",
+    title: "Stack",
+    groups: {
+      backend: "Backend",
+      frontend: "Frontend",
+      data: "Data",
+      hardware: "Maskinvare og spill",
+      tooling: "Verktøy",
+      also: "Også",
+    },
+  },
+  internshipMeta: {
+    role: "Rolle",
+    stack: "Stack",
+    result: "Resultat",
   },
   profile: {
     tagline: "Junior fullstack-utvikler hos Innovaware, bygger CRM-systemer i C# (.NET 10) og Laravel, med React / Next.js i frontend.",
@@ -81,6 +107,7 @@ const no: Dictionary = {
     email: "Send e-post",
     cv: "Last ned CV",
     cta: "Ta kontakt",
+    location: "Nistelrode · Uden-Veghel-regionen · nederlandsk og engelsk (B2)",
   },
   featured: {
     github: "Se på GitHub",
@@ -108,6 +135,8 @@ const no: Dictionary = {
     label: "Utdanning",
     title: "Porteføljeprosjekter",
     exercisesTitle: "Skoleoppgaver",
+    intro: "Kundearbeid, praksisarbeid og egne prosjekter. For hvert prosjekt står det hva det gjør, hva det er bygget med og hvor du kan se koden.",
+    exercisesSubtitle: "Oppgaver fra Koning Willem I College",
     projects: [
       {
         title: "Regnbueprosjektet",

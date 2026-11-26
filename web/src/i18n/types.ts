@@ -9,8 +9,18 @@ export type Dictionary = {
     internship1: string;
     internship2: string;
     language: string;
+    /** Header links */
+    work: string;
+    about: string;
+    stack: string;
+    /** "← back to home" on the portfolio page */
+    backHome: string;
+    /** "← all projects" on the internship pages */
+    allProjects: string;
+    /** Label above the link to the other internship */
+    nextInternship: string;
   };
-  footer: { rights: string };
+  footer: { rights: string; builtWith: string };
   home: {
     eyebrow: string;
     iAm: string;
@@ -21,7 +31,18 @@ export type Dictionary = {
     selectedLabel: string;
     projectsTitle: string;
     photoAlt: string;
+    /** Output lines in the little terminal next to the photo */
+    terminalWho: string;
+    terminalStatus: string;
   };
+  /** The "My stack" grid; the technologies themselves live in data/media.ts. */
+  stack: {
+    label: string;
+    title: string;
+    groups: Record<"backend" | "frontend" | "data" | "hardware" | "tooling" | "also", string>;
+  };
+  /** Labels of the facts grid at the top of an internship page. */
+  internshipMeta: { role: string; stack: string; result: string };
   profile: { tagline: string; bio1: string; bio2: string };
   work: {
     label: string;
@@ -52,6 +73,8 @@ export type Dictionary = {
     email: string;
     cv: string;
     cta: string;
+    /** Location and languages line under the contact links */
+    location: string;
   };
   /** Highlighted work; links and tags live in data/media.ts. */
   featured: {
@@ -66,6 +89,10 @@ export type Dictionary = {
     label: string;
     title: string;
     exercisesTitle: string;
+    /** Intro text under the page title */
+    intro: string;
+    /** Second line of the collapsed school-exercises row */
+    exercisesSubtitle: string;
     projects: ProjectText[];
   };
   internship1: {

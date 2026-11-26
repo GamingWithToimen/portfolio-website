@@ -43,15 +43,24 @@ export default function LanguageSwitcher({
         aria-expanded={open}
         aria-haspopup="true"
         onClick={() => setOpen((o) => !o)}
-        className="flex h-11 items-center gap-2 border-2 border-line px-3 text-sm font-extrabold uppercase text-[var(--text)] transition-colors hover:border-accent"
+        className="flex h-11 items-center gap-2 border border-[#333] px-3 font-display text-xs font-extrabold tracking-[0.14em] text-white uppercase transition-colors hover:border-white"
       >
         {current}
-        <span aria-hidden className={`text-xs transition-transform ${open ? "rotate-180" : ""}`}>
-          ▾
-        </span>
+        <svg
+          aria-hidden
+          width="12"
+          height="12"
+          viewBox="0 0 20 20"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          className={`transition-transform ${open ? "rotate-180" : ""}`}
+        >
+          <path d="m5 8 5 5 5-5" />
+        </svg>
       </button>
       {open && (
-        <ul className="absolute right-0 z-50 mt-2 w-48 border-2 border-line bg-bg shadow-[0_20px_40px_rgba(0,0,0,0.4)]">
+        <ul className="absolute right-0 z-50 mt-2 w-48 border border-[#333] bg-black shadow-[0_20px_40px_rgba(0,0,0,0.6)]">
           {locales.map((l) => (
             <li key={l.code}>
               <Link
@@ -60,12 +69,12 @@ export default function LanguageSwitcher({
                 lang={l.code}
                 aria-current={l.code === current ? "true" : undefined}
                 onClick={() => setOpen(false)}
-                className={`flex justify-between px-4 py-2.5 text-sm transition-colors hover:bg-surface ${
-                  l.code === current ? "font-bold text-accent" : "text-[var(--text)]"
+                className={`flex justify-between px-4 py-2.5 text-sm transition-colors hover:bg-[#151515] ${
+                  l.code === current ? "font-semibold text-accent" : "text-white"
                 }`}
               >
                 {l.label}
-                <span className="uppercase text-muted">{l.code}</span>
+                <span className="font-mono text-xs uppercase text-muted">{l.code}</span>
               </Link>
             </li>
           ))}

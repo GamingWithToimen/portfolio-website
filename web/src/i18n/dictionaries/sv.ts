@@ -11,9 +11,16 @@ const sv: Dictionary = {
     internship1: "Omnilan",
     internship2: "AB Transport",
     language: "Språk",
+    work: "Arbete",
+    about: "Om mig",
+    stack: "Stack",
+    backHome: "Tillbaka till startsidan",
+    allProjects: "Alla projekt",
+    nextInternship: "Nästa praktik",
   },
   footer: {
     rights: "Alla rättigheter förbehållna.",
+    builtWith: "Byggd med C#, kaffe och nyfikenhet",
   },
   home: {
     eyebrow: "Junior Full-Stack Developer · C# / .NET",
@@ -25,6 +32,25 @@ const sv: Dictionary = {
     selectedLabel: "Utvalt",
     projectsTitle: "Projekt",
     photoAlt: "Porträtt av Tijme Vervoort",
+    terminalWho: "utvecklare, byggare, gamer",
+    terminalStatus: "bygger CRM-system @ Innovaware",
+  },
+  stack: {
+    label: "Min",
+    title: "Stack",
+    groups: {
+      backend: "Backend",
+      frontend: "Frontend",
+      data: "Data",
+      hardware: "Hårdvara och spel",
+      tooling: "Verktyg",
+      also: "Även",
+    },
+  },
+  internshipMeta: {
+    role: "Roll",
+    stack: "Stack",
+    result: "Resultat",
   },
   profile: {
     tagline: "Junior fullstackutvecklare på Innovaware, bygger CRM-system i C# (.NET 10) och Laravel, med React / Next.js i frontend.",
@@ -81,6 +107,7 @@ const sv: Dictionary = {
     email: "Mejla mig",
     cv: "Ladda ner CV",
     cta: "Kontakta mig",
+    location: "Nistelrode · Uden-Veghel-regionen · nederländska och engelska (B2)",
   },
   featured: {
     github: "Visa på GitHub",
@@ -108,6 +135,8 @@ const sv: Dictionary = {
     label: "Utbildning",
     title: "Portfolioprojekt",
     exercisesTitle: "Skoluppgifter",
+    intro: "Kunduppdrag, praktikarbete och egna projekt. För varje projekt står vad det gör, vad det är byggt med och var du kan se koden.",
+    exercisesSubtitle: "Uppgifter från Koning Willem I College",
     projects: [
       {
         title: "Regnbågsprojektet",
