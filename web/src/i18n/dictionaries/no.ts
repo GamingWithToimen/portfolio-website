@@ -127,7 +127,7 @@ const no: Dictionary = {
       },
       dataDefence: {
         title: "Data-Defence",
-        description: "Et spill i C# og Unity: finn infiltratøren i et papirfirma, håndter hendelser som branner og si opp ansatte som skaper problemer.",
+        description: "Førstepersons spillprototype i C# og Unity 6, laget på skolen. Du går rundt på et kontor, jobber ved datamaskiner for å fylle en fremdriftslinje og håndterer tilfeldige avbrudd. Jakten på infiltratøren er neste steg i designet.",
       },
       portfolioSite: {
         title: "Denne porteføljen",

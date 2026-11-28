@@ -127,7 +127,7 @@ const fi: Dictionary = {
       },
       dataDefence: {
         title: "Data-Defence",
-        description: "Peli C#:lla ja Unitylla: etsi soluttautuja paperiyhtiöstä, hoida tapahtumia kuten tulipaloja ja irtisano ongelmia aiheuttavat työntekijät.",
+        description: "Ensimmäisen persoonan peliprototyyppi C#:lla ja Unity 6:lla, tehty koulussa. Liikut toimistossa, teet töitä tietokoneilla täyttääksesi edistymispalkin ja hoidat satunnaisia keskeytyksiä. Soluttautujan jäljittäminen on suunnitelman seuraava vaihe.",
       },
       portfolioSite: {
         title: "Tämä portfolio",

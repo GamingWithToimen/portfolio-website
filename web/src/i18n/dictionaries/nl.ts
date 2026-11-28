@@ -127,7 +127,7 @@ const nl: Dictionary = {
       },
       dataDefence: {
         title: "Data-Defence",
-        description: "Een game in C# en Unity: vind de infiltrant bij een papierbedrijf, handel incidenten zoals branden af en ontsla medewerkers die problemen veroorzaken.",
+        description: "First-person gameprototype in C# en Unity 6, gemaakt op school. Je loopt door een kantoor, werkt aan computers om een voortgangsbalk te vullen en handelt onverwachte onderbrekingen af. De jacht op de datalek-infiltrant is de volgende stap in het ontwerp.",
       },
       portfolioSite: {
         title: "Dit portfolio",

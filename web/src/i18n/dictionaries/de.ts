@@ -127,7 +127,7 @@ const de: Dictionary = {
       },
       dataDefence: {
         title: "Data-Defence",
-        description: "Ein Spiel in C# und Unity: Finde den Eindringling in einer Papierfirma, bewältige Vorfälle wie Brände und entlasse Mitarbeitende, die Probleme verursachen.",
+        description: "Ego-Spielprototyp in C# und Unity 6, entstanden in der Schule. Man läuft durch ein Büro, arbeitet an Computern, um einen Fortschrittsbalken zu füllen, und reagiert auf zufällige Unterbrechungen. Die Jagd auf den Datenspion ist der nächste Schritt im Design.",
       },
       portfolioSite: {
         title: "Dieses Portfolio",

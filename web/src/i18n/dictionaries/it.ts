@@ -127,7 +127,7 @@ const it: Dictionary = {
       },
       dataDefence: {
         title: "Data-Defence",
-        description: "Un gioco in C# e Unity: trova l'infiltrato in un'azienda di carta, gestisci incidenti come incendi e licenzia i dipendenti che creano problemi.",
+        description: "Prototipo di gioco in prima persona in C# e Unity 6, realizzato a scuola. Ti muovi in un ufficio, lavori ai computer per riempire una barra di avanzamento e gestisci interruzioni casuali. La caccia all’infiltrato è il prossimo passo del progetto.",
       },
       portfolioSite: {
         title: "Questo portfolio",
