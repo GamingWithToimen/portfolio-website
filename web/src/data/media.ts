@@ -57,7 +57,8 @@ export const featured: Featured[] = [
     year: 2026,
     tags: ["React", "TypeScript", "Node.js", "Open Banking (PSD2)", "Vitest"],
     github: "https://github.com/GamingWithToimen/budgetapp",
-    art: "dashboard",
+    // Empty start screen, no personal data
+    image: "/images/budgetapp.jpg",
   },
   {
     key: "dataDefence",
