@@ -117,6 +117,10 @@ const es: Dictionary = {
         title: "Sistemas CRM en Innovaware",
         description: "Funcionalidades back-end para sistemas CRM de pymes: C# (.NET 10), Laravel, API REST, MySQL, GitLab CI/CD y una integración de helpdesk con IA.",
       },
+      budgetapp: {
+        title: "App de presupuesto con conexión bancaria",
+        description: "App de presupuesto mensual reconstruida a partir de un único archivo HTML en React y TypeScript, con un pequeño servidor Node.js. Conecta Rabobank y SpareBank 1 mediante Open Banking (PSD2) para mantener al día los gastos fijos, en tres idiomas y con más de 100 pruebas automatizadas.",
+      },
       signature: {
         title: "Firma de correo para AB Transport",
         description: "Firma de correo HTML adaptable para AB Transport y AB Solutions, con ambas marcas, datos de contacto y enlaces a redes sociales. Probada en Gmail, Outlook, Apple Mail y clientes móviles.",

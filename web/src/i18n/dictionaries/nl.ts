@@ -117,6 +117,10 @@ const nl: Dictionary = {
         title: "CRM-systemen bij Innovaware",
         description: "Back-endfeatures voor CRM-systemen van het mkb: C# (.NET 10), Laravel, REST API's, MySQL, GitLab CI/CD en een AI-helpdeskintegratie.",
       },
+      budgetapp: {
+        title: "Budgetapp met bankkoppeling",
+        description: "Maandbudget-app die ik van één HTML-bestand heb omgebouwd naar React en TypeScript, met een kleine Node.js-server. Via Open Banking (PSD2) koppelt hij Rabobank en SpareBank 1 om vaste lasten bij te werken, in drie talen en met meer dan 100 automatische tests.",
+      },
       signature: {
         title: "E-mailhandtekening voor AB Transport",
         description: "Responsieve HTML-e-mailhandtekening voor AB Transport en AB Solutions, met beide merken, contactgegevens en sociale links. Getest in Gmail, Outlook, Apple Mail en mobiele mailapps.",

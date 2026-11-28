@@ -26,7 +26,7 @@ export const contactLinks = {
   cv: "/cv/Tijme-Vervoort-CV.pdf",
 } as const;
 
-export type FeaturedKey = "crm" | "signature" | "dataDefence" | "portfolioSite";
+export type FeaturedKey = "crm" | "budgetapp" | "signature" | "dataDefence" | "portfolioSite";
 
 /** Drawn (hatched) artwork shown in the device frame when there is no screenshot. */
 export type ArtKind = "dashboard" | "target" | "devices";
@@ -51,6 +51,13 @@ export const featured: Featured[] = [
     tags: ["C# / .NET 10", "Laravel", "REST APIs", "MySQL", "GitLab CI/CD"],
     // Test environment, every name and amount blurred
     image: "/images/crm-projecten.jpg",
+  },
+  {
+    key: "budgetapp",
+    year: 2026,
+    tags: ["React", "TypeScript", "Node.js", "Open Banking (PSD2)", "Vitest"],
+    github: "https://github.com/GamingWithToimen/budgetapp",
+    art: "dashboard",
   },
   {
     key: "dataDefence",

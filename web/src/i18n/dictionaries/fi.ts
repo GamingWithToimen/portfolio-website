@@ -117,6 +117,10 @@ const fi: Dictionary = {
         title: "CRM-järjestelmät Innovawarella",
         description: "Taustajärjestelmän ominaisuuksia pk-yritysten CRM-järjestelmiin: C# (.NET 10), Laravel, REST-rajapinnat, MySQL, GitLab CI/CD ja tekoälypohjainen helpdesk-integraatio.",
       },
+      budgetapp: {
+        title: "Budjettisovellus pankkiyhteydellä",
+        description: "Kuukausibudjettisovellus, joka on rakennettu yhdestä HTML-tiedostosta uudelleen Reactilla ja TypeScriptillä pienen Node.js-palvelimen kanssa. Se yhdistää Rabobankin ja SpareBank 1:n Open Banking (PSD2) -rajapinnan kautta pitääkseen kiinteät menot ajan tasalla, kolmella kielellä ja yli 100 automaattisella testillä.",
+      },
       signature: {
         title: "Sähköpostiallekirjoitus AB Transportille",
         description: "Responsiivinen HTML-sähköpostiallekirjoitus AB Transportille ja AB Solutionsille: molemmat brändit, yhteystiedot ja somelinkit. Testattu Gmailissa, Outlookissa, Apple Mailissa ja mobiilisovelluksissa.",

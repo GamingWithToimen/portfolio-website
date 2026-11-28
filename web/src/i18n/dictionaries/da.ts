@@ -117,6 +117,10 @@ const da: Dictionary = {
         title: "CRM-systemer hos Innovaware",
         description: "Backend-funktioner til CRM-systemer for små og mellemstore virksomheder: C# (.NET 10), Laravel, REST-API'er, MySQL, GitLab CI/CD og en AI-helpdeskintegration.",
       },
+      budgetapp: {
+        title: "Budgetapp med bankforbindelse",
+        description: "Månedsbudget-app bygget om fra én HTML-fil til React og TypeScript, med en lille Node.js-server. Den forbinder Rabobank og SpareBank 1 via Open Banking (PSD2) for at holde faste udgifter opdateret, på tre sprog og med over 100 automatiske tests.",
+      },
       signature: {
         title: "E-mailsignatur til AB Transport",
         description: "Responsiv HTML-e-mailsignatur til AB Transport og AB Solutions med begge brands, kontaktoplysninger og links til sociale medier. Testet i Gmail, Outlook, Apple Mail og mobile mailapps.",
